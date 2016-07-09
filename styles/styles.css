@@ -1,0 +1,26 @@
+.red, #red {
+	background: red;
+}
+
+#blue {
+	background: blue;
+}
+
+#green {
+	background: green;
+}
+
+nav {
+	position: fixed;
+	background: red;
+	right: 0;
+	top: 100px;
+}
+
+nav > div {
+	padding: 20px;
+}
+
+footer > div.row > div.col-10 {
+	background-color: black;
+}
