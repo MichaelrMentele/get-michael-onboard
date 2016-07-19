@@ -77,3 +77,11 @@ nav a { display: inline-block; }
 nav div {	margin: 0 auto; }
 
 nav {text-align: center;}
+
+
+@media print {
+  nav {display: none;}
+  #freelance{padding-bottom: 150px;}
+  #university{padding-bottom: 100px;}
+  
+}
