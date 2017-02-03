@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/get-michael-onboard/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/get-michael-onboard/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/get-michael-onboard/" rel="alternate" type="text/html" /><updated>2017-02-03T10:00:24-08:00</updated><id>http://localhost:4000/get-michael-onboard//</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/get-michael-onboard/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/get-michael-onboard/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/get-michael-onboard/" rel="alternate" type="text/html" /><updated>2017-02-03T10:56:52-08:00</updated><id>http://localhost:4000/get-michael-onboard//</id><title type="html">Get Michael Onboard</title><subtitle>This is the technical site and blog of software engineer Michael Mentele.
 </subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/get-michael-onboard/jekyll/update/2017/02/03/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-02-03T09:30:13-08:00</published><updated>2017-02-03T09:30:13-08:00</updated><id>http://localhost:4000/get-michael-onboard/jekyll/update/2017/02/03/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/get-michael-onboard/jekyll/update/2017/02/03/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
@@ -11,16 +11,429 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/get-michael-onboard/jekyll/update/2017/02/03/test-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-02-03T09:30:13-08:00</published><updated>2017-02-03T09:30:13-08:00</updated><id>http://localhost:4000/get-michael-onboard/jekyll/update/2017/02/03/test-jekyll</id><content type="html" xml:base="http://localhost:4000/get-michael-onboard/jekyll/update/2017/02/03/test-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Javascript Context</title><link href="http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/09/12/javascript-context.html" rel="alternate" type="text/html" title="Javascript Context" /><published>2016-09-12T00:00:00-07:00</published><updated>2016-09-12T00:00:00-07:00</updated><id>http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/09/12/javascript-context</id><content type="html" xml:base="http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/09/12/javascript-context.html">&lt;h1 id=&quot;scope-in-javascript&quot;&gt;Scope in JavaScript&lt;/h1&gt;
+&lt;p&gt;Scoping rules in any language are critical to understanding the context your code is operating in and what variables functions have access to.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;In JavaScript everything lives inside a global object. Even the variables that you define are really just parameters on the global object. In the browser this global object would be &lt;code class=&quot;highlighter-rouge&quot;&gt;window.&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;Within the global object each function has its own locally nested scope. Make sure when defining variables in a localscope you do so with &lt;code class=&quot;highlighter-rouge&quot;&gt;var&lt;/code&gt; to prevent it from jumping to a globally scoped variable.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Global scope out here&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Local scope in here&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;Now, this is fairly typical among most programming languages but Javascript has some quirks. You can also access global variables within your local scope. Typically, languages such as Ruby have a special notation to denote globals &lt;code class=&quot;highlighter-rouge&quot;&gt;($global&lt;/code&gt;), but in JS there is no such distinction. All variables declared outside a function are available to it.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;I am global&quot;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;I am local&quot;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;global&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;I am global&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;I am local&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This is called lexical scoping.&lt;/p&gt;
+
+&lt;h2 id=&quot;lexical-scoping&quot;&gt;Lexical Scoping&lt;/h2&gt;
+&lt;p&gt;Every time you define a function within a function it can access the variables of the function it is nested within. This is different from a language like Ruby whose functions aren’t first class objects and don’t have lexical scope (but its closures–blocks and procs–do).&lt;/p&gt;
+
+&lt;p&gt;Lexical scoping just means, that in the look up chain, the furthest nested function has access to variables all the way up the chain to the top but functions above it can’t access &lt;em&gt;its&lt;/em&gt; variables. This works well with JavaScripts prototypal inheritance (more on that later).&lt;/p&gt;
+
+&lt;p&gt;Accessing variables outside of the immediate scope is the behavior of a closure (more on this later as well).&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-wrong-with-this&quot;&gt;What is Wrong with This?&lt;/h2&gt;
+&lt;h3 id=&quot;implicit-function-context&quot;&gt;Implicit Function Context&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; is a reference to the context of the current object in lexical scope. But it doesn’t work as nicely as you would expect. &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; doesn’t refer to the current function or object it is contained in but rather the object or context with which it was &lt;em&gt;called.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myFunction&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// this === the global object&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;myFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// returns global object [object Window]&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// this makes sense because myFunction() is equivalent to window.myFunction()&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myObject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;myMethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//this = Object {myObject}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;No surprises here. But something strange happens when we nest a function within a function.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;test_context&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// this is object test_context&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// this object Window&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Why did the context change for the function call? When we reassigned the method to bar we didn’t take the object with it. Just the function. Now when it is called it is bound to the global object’s context. The binding happens when the function is executed–not defined.&lt;/p&gt;
+
+&lt;h3 id=&quot;explicit-function-context&quot;&gt;Explicit Function Context&lt;/h3&gt;
+&lt;p&gt;There a several ways we can use to minimize context loss for functions. We can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;call&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;apply&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;bind&lt;/code&gt; methods.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// calls a function with a specific object as the context would log object&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// same as call&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// permanently binds object to foo so that whenever it is called it is called within that context.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Context loss can be very confusing once you start passing things around but the thing to remember is that the context binding happens when a function is called or executed and not when it is defined.&lt;/p&gt;
+
+&lt;p&gt;Next week I’ll be diving more in depth into closures and context loss.&lt;/p&gt;</content><summary type="html">Scope in JavaScript
+Scoping rules in any language are critical to understanding the context your code is operating in and what variables functions have access to.</summary></entry><entry><title type="html">Constructors Are Nothing Special</title><link href="http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special.html" rel="alternate" type="text/html" title="Constructors Are Nothing Special" /><published>2016-08-18T00:00:00-07:00</published><updated>2016-08-18T00:00:00-07:00</updated><id>http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special</id><content type="html" xml:base="http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special.html">&lt;h1 id=&quot;constructors&quot;&gt;Constructors&lt;/h1&gt;
+
+&lt;p&gt;In other languages like Ruby, or Python we have classes. In JavaScript we have constructor functions. Constructors make lazy, bossy, children objects.&lt;/p&gt;
+
+&lt;p&gt;A normal function definition in JS looks like:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Semicolon optional ;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A constructor looks like:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MyFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Capitalized by convention&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;What’s the difference? Nothing!&lt;/p&gt;
+
+&lt;p&gt;Okay, cheap trick, I know. &lt;i&gt;All&lt;/i&gt; functions are technically ‘constructor functions.’ The &lt;b&gt;magic&lt;/b&gt; is in the implementation. Let’s do another comparison, shall we?&lt;/p&gt;
+
+&lt;p&gt;A normal function will do some operation and return a value, mutate some object, or display something. We’ll opt for the latter:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myDancingFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Waltzing...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Waltzing...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now, in contrast, a constructor function returns a new object:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Dancer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;firstName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Magic&quot;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lastName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Mike&quot;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Dirty Dancing...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// implicitly returns an object unless&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// you specify an explicit return&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chippendale&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Dancer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// calling the constructor...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;How does it know to return an object? The &lt;code class=&quot;highlighter-rouge&quot;&gt;new&lt;/code&gt; keyword does some magic and basically calls the constructor with the &lt;b&gt;context&lt;/b&gt; of an empty object to serve as what &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; refers to.&lt;/p&gt;
+
+&lt;p&gt;Calling &lt;code class=&quot;highlighter-rouge&quot;&gt;Dancer()&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;new&lt;/code&gt; is like passing in an object and modifying it like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;OtherDancer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ourNewObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;ourNewObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;firstName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Magic&quot;&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;ourNewObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lastName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Mike&quot;&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;ourNewObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Other Dirty Dancing&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ourNewObject&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chippendale&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;OtherDancer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({})&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// chippendale is: {firstName: &quot;Magic&quot;, lastName: &quot;Mike&quot;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So, we don’t really need the &lt;code class=&quot;highlighter-rouge&quot;&gt;new&lt;/code&gt; keyword at all, it’s just a convenience method… right? Not quite. There are a few other thing the &lt;code class=&quot;highlighter-rouge&quot;&gt;new&lt;/code&gt; keyword does for us.&lt;/p&gt;
+
+&lt;p&gt;It also sets the &lt;code class=&quot;highlighter-rouge&quot;&gt;__proto__&lt;/code&gt; property of our new object to the &lt;code class=&quot;highlighter-rouge&quot;&gt;prototype&lt;/code&gt; object that every function holds a reference of.&lt;/p&gt;
+
+&lt;p&gt;For a quick conceptual introduction (using a Star Wars analogy) of prototypes and their role in behavior delegation click &lt;a href=&quot;https://medium.com/@michaelrmentele/wtf-javascript-8fd6d1aaed71#.pw6jgbze9&quot;&gt;HERE&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;constructors-and-their-prototypes&quot;&gt;Constructors and Their Prototypes&lt;/h2&gt;
+
+&lt;p&gt;Why do we care about the &lt;code class=&quot;highlighter-rouge&quot;&gt;__proto__&lt;/code&gt; property? So-called ‘inheritance’ and defining types. Only, it’s not &lt;i&gt;really&lt;/i&gt; inheritance at all–its &lt;b&gt;behavior delegation&lt;/b&gt; (which is one of the reasons javascript is so amazing). For more on this click the link above.&lt;/p&gt;
+
+&lt;p&gt;So, what if we want our dancers to get a little more &lt;i&gt;classy&lt;/i&gt;? First, let’s fix our constructor so we can pass in arguments:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Dancer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;firstName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lastName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;firstName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;firstName&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lastName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lastName&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//same dance method...&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now, we want to create other types of dancers that reuse the above from dancer. We do that like:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Dancer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;firstName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lastName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NiceDancer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;classyDancing&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Waltzing...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;NiceDancer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Dancer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now, our NiceDancer has a prototype object that is the object literal returned by &lt;code class=&quot;highlighter-rouge&quot;&gt;new Dancer()&lt;/code&gt;. If we make a call like:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;NiceDancer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// prints: Dirty Dancing...&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;NiceDancer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;classyDancing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// prints: Waltzing...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Notice we have access to that method, and all other methods, defined on our prototype from our &lt;code class=&quot;highlighter-rouge&quot;&gt;NiceDancer&lt;/code&gt;. In classical inheritance methods are copied down to ‘children.’ In delegation, objects delegate to their ‘parents’ and search through their parents methods when a method is called–if the method doesn’t exist on themselves.&lt;/p&gt;
+
+&lt;p&gt;![Lazy Behavior Delegation Chart]
+(https://github.com/MichaelrMentele/blog-posts/blob/master/published/constructors_are_nothing_special/prototypalInheritance.png)&lt;/p&gt;
+
+&lt;p&gt;Note: We could have also put the dancing method on the &lt;code class=&quot;highlighter-rouge&quot;&gt;Dancer&lt;/code&gt; prototype like: &lt;code class=&quot;highlighter-rouge&quot;&gt;Dancer.prototype.dance = function dance() {}&lt;/code&gt;, but the prototype of &lt;code class=&quot;highlighter-rouge&quot;&gt;Dancer&lt;/code&gt; is the global object, and the global object shouldn’t be able to dance!&lt;/p&gt;
+
+&lt;p&gt;So, a prototype is an &lt;b&gt;object, linked to a constructor, so the constructor knows to pass that link to objects that it creates&lt;/b&gt;. It does this by setting the &lt;code class=&quot;highlighter-rouge&quot;&gt;__proto__&lt;/code&gt; property on new objects to reference the prototype.&lt;/p&gt;
+
+&lt;h2 id=&quot;analogy&quot;&gt;Analogy&lt;/h2&gt;
+&lt;p&gt;A constructor is kind of like a recruiter, when you get hired she takes you (some roleless person) and says ‘hey, you are now a software engineer and this guy is your boss.’ The difference in Javascript is that a constructor ‘hires’ new objects and says ‘hey, this other object (the boss from before) is your slave, give it as many commands as you want and offload all your work onto it.’ Which, is a brutal, but refreshing model. So, you could say that new objects are lazy because they offload work to prototype (parent) objects in a kind of reverse pyramid scheme.&lt;/p&gt;
+
+&lt;p&gt;In essence, JavaScript is a bossy language full of lazy children.&lt;/p&gt;
+
+&lt;p&gt;Yup. That pretty much sums it up.&lt;/p&gt;</content><summary type="html">Constructors</summary></entry><entry><title type="html">Mental Models: The Dom</title><link href="http://localhost:4000/get-michael-onboard/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM.html" rel="alternate" type="text/html" title="Mental Models: The Dom" /><published>2016-08-17T00:00:00-07:00</published><updated>2016-08-17T00:00:00-07:00</updated><id>http://localhost:4000/get-michael-onboard/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM</id><content type="html" xml:base="http://localhost:4000/get-michael-onboard/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM.html">&lt;h1 id=&quot;the-dom-is-an-idea-not-a-thing&quot;&gt;The DOM is an Idea… Not a Thing&lt;/h1&gt;
+&lt;p&gt;When I first learned about the DOM I was confused about how it was referred to as a ‘thing’ that could be accessed (false) and as a way of representing things (true).&lt;/p&gt;
+
+&lt;p&gt;The keyword is ‘model’ AKA representation. The DOM is a blueprint but often it is used to refer to the object tree that is the result of parsing markup. So, I thought I’d share this distinction.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-the-dom&quot;&gt;What is the DOM?&lt;/h1&gt;
+&lt;p&gt;The DOM is a way of representing a HTML document as a collection of nodes where each node is an object. This collection is organized into a tree based on how the HTML elements were nested. Everything is a node in the DOM. Each node contains, as properties, it’s parent, siblings, and children nodes (among other properties and methods).&lt;/p&gt;
+
+&lt;p&gt;It is important to note that the DOM is language agnostic. That is, it is a convention, with which any programming language can generate a tree of nodes that represents some mark up. Most commonly this is done with Javascript.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-does-it-look-like-really&quot;&gt;What Does it Look Like &lt;i&gt;Really&lt;/i&gt;?&lt;/h1&gt;
+&lt;p&gt;When we read about the DOM we typically see something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;dom.png&quot; caption=&quot;Image from Kirupa.com&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This image is not what we are interacting with. When the HTML is parsed it creates a global object we refer to as the window (AKA context) for Javascript that lives in the browser. By default all other JS objects will delegate to the window as their prototype. You could say that all other objects extend this global object.&lt;/p&gt;
+
+&lt;p&gt;Okay, so what does the thing we interact with actually look like? Just a bunch of objects. In JS it would look something like:&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// our page content&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;articl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// meta information and links&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;head&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// contains the html&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;im_like_the_html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// contains the html and a bunch of methods&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;im_like_the_document&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// global object&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;im_like_the_window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Of course each object would have many more methods and many more attributes (and probably extend a node object) but you get the idea. The document is really just some HTML parsed into a series of objects that you can use JS (and libraries like jQuery) to perform operations on.&lt;/p&gt;
+
+&lt;p&gt;It’s simple, but if you’re like me, it’s easy to overthink and overcomplicate what is going on behind the scenes. &lt;/p&gt;
+
+&lt;h1 id=&quot;resources&quot;&gt;Resources&lt;/h1&gt;
+&lt;p&gt;https://www.kirupa.com/html5/traversing_the_dom.htm 
+https://dom.spec.whatwg.org/&lt;/p&gt;</content><summary type="html">The DOM is an Idea… Not a Thing
+When I first learned about the DOM I was confused about how it was referred to as a ‘thing’ that could be accessed (false) and as a way of representing things (true).</summary></entry><entry><title type="html">To Newbs: Recursion is Useful</title><link href="http://localhost:4000/get-michael-onboard/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees.html" rel="alternate" type="text/html" title="To Newbs: Recursion is Useful" /><published>2016-07-25T00:00:00-07:00</published><updated>2016-07-25T00:00:00-07:00</updated><id>http://localhost:4000/get-michael-onboard/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees</id><content type="html" xml:base="http://localhost:4000/get-michael-onboard/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees.html">&lt;h1 id=&quot;recursion&quot;&gt;Recursion&lt;/h1&gt;
+
+&lt;p&gt;I’ve often heard new programmers ask why recursion is so useful. My brother, a successful IOS developer still doesn’t see the value in recursion (at least I gather from our conversations).&lt;/p&gt;
+
+&lt;p&gt;So, is recursion some pointless ‘book’ knowledge without practical use?&lt;/p&gt;
+
+&lt;p&gt;Not at all!&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-recursion&quot;&gt;What is Recursion?&lt;/h2&gt;
+
+&lt;p&gt;Recursion is a call of a function repeatedly (from within itself) until some condition (called a basecase) is met that can solve all of the previous function calls.&lt;/p&gt;
+
+&lt;p&gt;What does that mean?&lt;/p&gt;
+
+&lt;p&gt;You’re searching an unknown solution space that gets smaller with each function call.&lt;/p&gt;
+
+&lt;p&gt;What does &lt;i&gt;that&lt;/i&gt; mean!? See below.&lt;/p&gt;
+
+&lt;h3 id=&quot;recursion-at-work--binary-tree-traversal&quot;&gt;Recursion At Work — Binary Tree Traversal&lt;/h3&gt;
+
+&lt;p&gt;Say you need to traverse this tree and add up all the values you traverse on the way to the smallest value.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;            10
+           /  \
+          5    17
+        /  \    \
+       1    8    20
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;First we need to find the smallest value (hint: the smallest value is the value in the lowest left corner). For us humans, the ingenious products of billions of years of evolution, this takes just a glance.&lt;/p&gt;
+
+&lt;p&gt;Then we can easily sum up all the values above it: &lt;code class=&quot;highlighter-rouge&quot;&gt;1 + 5 + 10 = 16&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;But how can we make our stupid silicon minions figure it out? There are multiple ways, but the most eloquent (and least amount of code) requires…&lt;/p&gt;
+
+&lt;p&gt;Recursion!&lt;/p&gt;
+
+&lt;p&gt;So, first things first, with any problem, we start with…&lt;/p&gt;
+
+&lt;h3 id=&quot;the-algorithm&quot;&gt;The Algorithm&lt;/h3&gt;
+
+&lt;p&gt;How would we traverse the tree in plain english? Well, we’d start at the top, at &lt;code class=&quot;highlighter-rouge&quot;&gt;10&lt;/code&gt;, (also called the root node) and since it is a binary search tree (BST) we know that every value to the left of the current node is a smaller value and to the right a larger value.&lt;/p&gt;
+
+&lt;p&gt;So, starting at the root we’d do something like this:
+    1. Does this node have a child to the left?
+    2. If yes, go to that node and repeat the previous question
+    3. If no, add up all the previous nodes and return the sum&lt;/p&gt;
+
+&lt;h3 id=&quot;the-code&quot;&gt;The Code&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Create our data type...&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hasChildren&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;isMinimum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hasChildren&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Create the tree...&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;tree&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;tree&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;tree&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;tree&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;tree&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Our recursive problem...&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sumNodesOnPathToMinimum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# if no children we must be at the minimum value (or some other leaf node)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isMinimum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;sumNodesOnPathToMinimum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# See what just happened? We used 'memory' by saying hey, we don't know what the sum is yet, but we know this value is going to be part of it, so let's save it here and ask the next node if it is the minimum. If it is, we will go back through the chain of function calls and make the final computation.&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;# The final call would look something like:&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# root.value + node.left.value + node.left.left.value... and so on until we reach the minimum.&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;# This is nice because: it is extremely simple and it is computationally efficient.&lt;/span&gt;
+
+        &lt;span class=&quot;c&quot;&gt;# Think about how you would do this with a loop. It'd be quite a bit more clumsy, I think you'll agree.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Anything that has a basecase, or a continue-until-we-reach-the-end condition, is a great use of recursion. The solution to the base case ripples through all the callbacks on the stack until we get to the top call, which aggregates all the calls together.&lt;/p&gt;</content><summary type="html">Recursion</summary></entry><entry><title type="html">WTF Javascript!?</title><link href="http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/07/11/WTF-javascript.html" rel="alternate" type="text/html" title="WTF Javascript!?" /><published>2016-07-11T00:00:00-07:00</published><updated>2016-07-11T00:00:00-07:00</updated><id>http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/07/11/WTF-javascript</id><content type="html" xml:base="http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/07/11/WTF-javascript.html">&lt;p&gt;This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t you just be like everyone else.&lt;/p&gt;
+
+&lt;p&gt;I feel vaguely guilty now, a little like that teacher who called young Einstein dumb. Turns out prototypal inheritance is awesome. Cue Highschool Musical and other stories of upsetting the status-quo.
+So…&lt;/p&gt;
+&lt;h1 id=&quot;what-is-prototypal-inheritance&quot;&gt;What is Prototypal Inheritance?&lt;/h1&gt;
+&lt;p&gt;In a word it’s delegation — not inheritance at all.&lt;/p&gt;
+
+&lt;p&gt;In Javascript ‘ancestor’ (prototype) objects are generic workhorses that do the common tasks that all its bossy ‘children’ don’t want to do. The ‘children’ are snowflakes that have their individual unique methods — or should; I mean, you’re not duplicating code are you?&lt;/p&gt;
+
+&lt;p&gt;Well, if you are using classes… then you are.&lt;/p&gt;
+
+&lt;h1 id=&quot;classes-vs-prototypes&quot;&gt;Classes vs Prototypes&lt;/h1&gt;
+&lt;p&gt;In class based inheritance everything is a clone (think Star Wars). Each clone shares the same behaviors (methods) as Boba Fett. They look like Boba Fett, talk like Boba Fett, and shoot like Boba Fett.&lt;/p&gt;
+
+&lt;p&gt;In contrast Javascript prototypes are slaves to any object that extends them. Imagine every clone telling the original Boba Fett to shoot whenever they need to shoot. The analogy breaks down here a bit because Boba can only fly so fast with his jetpack but in code we don’t have that limitation…&lt;/p&gt;
+
+&lt;p&gt;Anyway, the advantage of this tyranny (who knew there were advantages to tyranny?) is that your code is DRY. Think about the case when you have a 1,000 or a 1,000,000 instances (clones) — do you really want to duplicate shared behavior? Since we are all obsessive about computational efficiency… the answer is no.&lt;/p&gt;
+
+&lt;p&gt;So, with classes, we have a thousand clones running around shooting guns. In Javascript all the clones just tell Boba to take care of it. Finally, clones have the time to take that pottery class they’ve always wanted to…&lt;/p&gt;</content><summary type="html">This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t you just be like everyone else.</summary></entry><entry><title type="html">Do You Really Know How Functions Work in Javascript?</title><link href="http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work.html" rel="alternate" type="text/html" title="Do You Really Know How Functions Work in Javascript?" /><published>2016-07-04T00:00:00-07:00</published><updated>2016-07-04T00:00:00-07:00</updated><id>http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work</id><content type="html" xml:base="http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work.html">&lt;p&gt;A function is pretty simple, right? It’s just a reference to a block of code that get’s executed when called…&lt;/p&gt;
+
+&lt;p&gt;Kind of, but not quite. You see, functions also remember scope and bind to that scope when called, even when the context has changed, they can remember their local context. This is called a closure.&lt;/p&gt;
+
+&lt;h2 id=&quot;lexical-scope-of-nested-functions&quot;&gt;Lexical Scope of Nested Functions&lt;/h2&gt;
+
+&lt;p&gt;What happens in the following code?&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greeting&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;How do you do?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;howdy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greeting&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;howdy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;greeting&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;howdy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If your answer was it returns &lt;code class=&quot;highlighter-rouge&quot;&gt;howdy&lt;/code&gt; then congratz! Now, what if we make one small tweak?&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// code omitted...&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This time instead of returning the evaluation of the &lt;code class=&quot;highlighter-rouge&quot;&gt;speak&lt;/code&gt; function we return a reference (notice the missing parens). If we invoke that function with &lt;code class=&quot;highlighter-rouge&quot;&gt;howdy()();&lt;/code&gt; in the global context, what will our greeting be?&lt;/p&gt;
+
+&lt;p&gt;Hint: it will still be &lt;code class=&quot;highlighter-rouge&quot;&gt;howdy&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hmm, it seems that somehow we are retaining information with our reference to speak. To prove this to you, let’s look at another example.&lt;/p&gt;
+
+&lt;p&gt;What if we called &lt;code class=&quot;highlighter-rouge&quot;&gt;howdy&lt;/code&gt; as an anonymous IIFE like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greeting&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;How do you do?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;im_an_IFFE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greeting&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;howdy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;greeting&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So, we define the funtion and call it on the same line (IFFE) and our &lt;code class=&quot;highlighter-rouge&quot;&gt;im_an_IFFE&lt;/code&gt; variable gets a reference to the nested &lt;code class=&quot;highlighter-rouge&quot;&gt;speak&lt;/code&gt; function whose context is gone forever. Right?&lt;/p&gt;
+
+&lt;p&gt;Nope! Guess what, calling &lt;code class=&quot;highlighter-rouge&quot;&gt;im_an_IFFE()&lt;/code&gt; still returns “howdy”.&lt;/p&gt;
+
+&lt;p&gt;How is this happening?&lt;/p&gt;
+
+&lt;h2 id=&quot;closures&quot;&gt;Closures&lt;/h2&gt;
+
+&lt;p&gt;If you haven’t heard of closures this may have been very confusing. Afterall, context in JS is important, especially for functions that make use of the &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; keywords like with the Constructor Pattern.&lt;/p&gt;
+
+&lt;p&gt;But, when a function is created it doesn’t just remember the block of code inside it, it also remembers its environment. It is said to ‘bind’ (following lexical scoping rules AKA inside out) to its surrounding artifacts AKA variables. This is also true in Ruby procs and lambda functions. Also, Python handles closures much like JS.&lt;/p&gt;
+
+&lt;p&gt;Why do all these languages use closures? They are especially useful for things like callbacks and functions as first-class objects (more on this later).&lt;/p&gt;
+
+&lt;h2 id=&quot;why-is-it-called-a-closure&quot;&gt;Why is it Called a ‘Closure’?&lt;/h2&gt;
+&lt;p&gt;So, a closure is a function along with its environment. But why do we call it a closure? A function is like us, it doesn’t like unanswered questions, like free variables and so searches for answers. When it finds them it is completely defined and, thus, finds ‘closure.’ And couldn’t we all use a little bit more closure in our lives?&lt;/p&gt;
+
+&lt;p&gt;If you are a programmer, then the answer is a definite &lt;em&gt;yes&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Yeah. I went there.&lt;/p&gt;
+
+&lt;p&gt;Anyway, that is a quick definition of closures. If you know callbacks and how first-class objects first then you’re probably a Jedi master programmer.&lt;/p&gt;
+
+&lt;p&gt;As for me, I’m a sith…(#lightning is cool)&lt;/p&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
+&lt;p&gt;For an excellent dive into closures (and JS in general) I recommend checking out ‘Headfirst into Javascript.’&lt;/p&gt;</content><summary type="html">A function is pretty simple, right? It’s just a reference to a block of code that get’s executed when called…</summary></entry></feed>

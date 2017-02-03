@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Welcome to Jekyll!</title>
-  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
+  <title>WTF Javascript!?</title>
+  <meta name="description" content="This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t...">
 
   <link rel="stylesheet" href="/get-michael-onboard/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/get-michael-onboard/jekyll/update/2017/02/03/test-jekyll.html">
-  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/get-michael-onboard/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/get-michael-onboard/jekyll/update/javascript/2016/07/11/WTF-javascript.html">
+  <link rel="alternate" type="application/rss+xml" title="Get Michael Onboard" href="/get-michael-onboard/feed.xml">
   
   
 </head>
@@ -23,7 +23,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/get-michael-onboard/">Your awesome title</a>
+    <a class="site-title" href="/get-michael-onboard/">Get Michael Onboard</a>
 
     <nav class="site-nav">
       <span class="menu-icon">
@@ -61,25 +61,30 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Welcome to Jekyll!</h1>
-    <p class="post-meta"><time datetime="2017-02-03T09:30:13-08:00" itemprop="datePublished">Feb 3, 2017</time></p>
+    <h1 class="post-title" itemprop="name headline">WTF Javascript!?</h1>
+    <p class="post-meta"><time datetime="2016-07-11T00:00:00-07:00" itemprop="datePublished">Jul 11, 2016</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+    <p>This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t you just be like everyone else.</p>
 
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>I feel vaguely guilty now, a little like that teacher who called young Einstein dumb. Turns out prototypal inheritance is awesome. Cue Highschool Musical and other stories of upsetting the status-quo.
+So…</p>
+<h1 id="what-is-prototypal-inheritance">What is Prototypal Inheritance?</h1>
+<p>In a word it’s delegation — not inheritance at all.</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>In Javascript ‘ancestor’ (prototype) objects are generic workhorses that do the common tasks that all its bossy ‘children’ don’t want to do. The ‘children’ are snowflakes that have their individual unique methods — or should; I mean, you’re not duplicating code are you?</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p>Well, if you are using classes… then you are.</p>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<h1 id="classes-vs-prototypes">Classes vs Prototypes</h1>
+<p>In class based inheritance everything is a clone (think Star Wars). Each clone shares the same behaviors (methods) as Boba Fett. They look like Boba Fett, talk like Boba Fett, and shoot like Boba Fett.</p>
 
+<p>In contrast Javascript prototypes are slaves to any object that extends them. Imagine every clone telling the original Boba Fett to shoot whenever they need to shoot. The analogy breaks down here a bit because Boba can only fly so fast with his jetpack but in code we don’t have that limitation…</p>
+
+<p>Anyway, the advantage of this tyranny (who knew there were advantages to tyranny?) is that your code is DRY. Think about the case when you have a 1,000 or a 1,000,000 instances (clones) — do you really want to duplicate shared behavior? Since we are all obsessive about computational efficiency… the answer is no.</p>
+
+<p>So, with classes, we have a thousand clones running around shooting guns. In Javascript all the clones just tell Boba to take care of it. Finally, clones have the time to take that pottery class they’ve always wanted to…</p>
 
   </div>
 
@@ -93,18 +98,18 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Your awesome title</h2>
+    <h2 class="footer-heading">Get Michael Onboard</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>
             
-              Your awesome title
+              Get Michael Onboard
             
             </li>
             
-            <li><a href="mailto:your-email@domain.com">your-email@domain.com</a></li>
+            <li><a href="mailto:michaelrmentele@gmail.com">michaelrmentele@gmail.com</a></li>
             
         </ul>
       </div>
@@ -130,7 +135,7 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+        <p>This is the technical site and blog of software engineer Michael Mentele.
 </p>
       </div>
     </div>
