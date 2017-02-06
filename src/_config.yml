@@ -17,8 +17,8 @@ title: Get Michael Onboard
 email: michaelrmentele@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This is the technical site and blog of software engineer Michael Mentele.
-baseurl: "/getmichaelonboard" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "/getmichaelonboard" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 destination: "../docs"
