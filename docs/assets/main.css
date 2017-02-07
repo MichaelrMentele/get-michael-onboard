@@ -450,3 +450,35 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+.headshot {
+  vertical-align: top;
+  display: inline-block;
+  padding: 1%; }
+  .headshot img {
+    width: 206px;
+    height: 206px; }
+
+.bio {
+  padding: 1%; }
+
+.slideshow-links {
+  list-style: none;
+  list-style-type: none;
+  margin: 0; }
+  .slideshow-links li {
+    margin: 0; }
+
+.left-column {
+  width: 27%;
+  display: inline-block; }
+
+.right-column {
+  width: 67%;
+  display: inline-block; }
+
+@media (max-width: 720px) {
+  .headshot, .bio {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px; } }
