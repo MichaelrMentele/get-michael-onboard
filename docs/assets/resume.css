@@ -79,9 +79,32 @@ nav div {	margin: 0 auto; }
 
 nav {text-align: center;}
 
+.osw-splash {
+  width: 30%;
+  padding-right: 4%;
+  display: inline-block;
+}
+
+.osw-logo {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.osw-stats ul {
+  list-style-type: circle;
+}
+.osw-stats li {
+  border-bottom: none;
+  list-style-type: inherit;
+}
 
 @media print {
-  nav {display: none;}
+  nav, header, footer {display: none;}
+  .wrapper {
+    margin: 0;
+  }
   #freelance{padding-bottom: 150px;}
   #university{padding-bottom: 100px;}
 
