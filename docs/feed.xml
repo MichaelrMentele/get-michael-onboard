@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/getmichaelonboard/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/getmichaelonboard/feed.xml" rel="self" type="application/atom+xml" /><link href="/getmichaelonboard/" rel="alternate" type="text/html" /><updated>2017-02-09T16:59:25-08:00</updated><id>/getmichaelonboard//</id><title type="html">Get Michael Onboard</title><subtitle>This is the technical site and blog of software engineer Michael Mentele.
-</subtitle><entry><title type="html">How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web</title><link href="/getmichaelonboard/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch.html" rel="alternate" type="text/html" title="How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web" /><published>2017-02-09T00:00:00-08:00</published><updated>2017-02-09T00:00:00-08:00</updated><id>/getmichaelonboard/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch.html">&lt;p&gt;&lt;a href=&quot;http://www.opensourcewatch.io&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-09T17:49:33-08:00</updated><id>http://localhost:4000//</id><title type="html">Get Michael Onboard</title><subtitle>This is the technical site and blog of software engineer Michael Mentele.
+</subtitle><entry><title type="html">How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web</title><link href="http://localhost:4000/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch.html" rel="alternate" type="text/html" title="How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web" /><published>2017-02-09T00:00:00-08:00</published><updated>2017-02-09T00:00:00-08:00</updated><id>http://localhost:4000/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch</id><content type="html" xml:base="http://localhost:4000/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch.html">&lt;p&gt;&lt;a href=&quot;http://www.opensourcewatch.io&quot;&gt;
   &lt;img style=&quot;max-width: 30%;&quot; src=&quot;/assets/osw-logo.png&quot; alt=&quot;opensourcewatch logo&quot; id=&quot;osw_logo&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
@@ -9,7 +9,21 @@
   &lt;li&gt;20,000,000+ Records (and counting)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;We ae going to walk you through the major struggles we faced and lessons learned along the way.&lt;/p&gt;
+&lt;p&gt;We are going to walk you through the major struggles we faced and lessons learned along the way.&lt;/p&gt;
+
+&lt;p&gt;Wait, who are &lt;em&gt;we&lt;/em&gt; you ask?&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;a href=&quot;http://getmichaelonboard.com/&quot;&gt;
+    &lt;img class=&quot;gravitar&quot; src=&quot;https://secure.gravatar.com/avatar/6ec313ee09eeb69eddd3789f98a3d2b2&quot; /&gt;
+  &lt;/a&gt;
+
+  &lt;a href=&quot;http://numbluk.com/credentials&quot;&gt;
+    &lt;img class=&quot;gravitar&quot; src=&quot;https://www.gravatar.com/avatar/fd080461b35c3dcb5911e38d5f58c5af&quot; /&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We are two full stack developers… and we are looking for work! Click our beautiful faces to check out us out ;)&lt;/p&gt;
 
 &lt;h2 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h2&gt;
 &lt;ol&gt;
@@ -62,7 +76,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/04_iteration_0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;One process can achieve 8,500 requests on our Digital Ocean server. We did some extrapolation and estimated it would take 36 hours to scrape all 100,000 repositories a single time (with an average of 2.8 requests needed per repository)!&lt;/p&gt;
+&lt;p&gt;One process can achieve 8,500 requests on our Digital Ocean server. We did some extrapolation and estimated it would take 36 hours to scrape all 100,000 repositories one time through (with an average of 2.8 requests needed per repository)!&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Capacity: 200,000 Requests Per Day &lt;br /&gt;
@@ -96,7 +110,7 @@ Servers: 1 &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Okay, how do we implement this? Two options occurred to us…&lt;/p&gt;
 
-&lt;p&gt;First, we could use the current database as a pseudo-queue by &lt;em&gt;timestamping&lt;/em&gt; the a repository everytime we scrape it, and then making sure we retrieve the record with the oldest ‘updated_at’ column. However, this means that every time we want the next repository, we have to do a scan to find the oldest timestamp. This is awfully slow:&lt;/p&gt;
+&lt;p&gt;First, we could use the current database as a pseudo-queue by &lt;em&gt;timestamping&lt;/em&gt; the repository every time we scrape it, and then making sure we retrieve the record with the oldest ‘updated_at’ column. However, this means that every time we want the next repository, we have to do a scan to find the oldest timestamp. This is awfully slow:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/10_db_coord_opt_before_idx.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -104,15 +118,15 @@ Servers: 1 &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/11_db_coord_opt_after_idx.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;It’s definitely faster. And if we scale it would do so in O(log(n)) time, which isn’t too bad. But, if we ever scale the repositories we track it will slow down.&lt;/p&gt;
+&lt;p&gt;It’s definitely faster. And if we scale it would do so in O(log(n)) time, which isn’t too bad. But, if we ever scale the repositories we track it will still slow down somewhat.&lt;/p&gt;
 
 &lt;p&gt;We prefer the O(1) complexity of a circular queue data structure.&lt;/p&gt;
 
-&lt;p&gt;How about Redis? Redis is often used as a shared queue for workers. It allows us to implement the circular queue directly. Here is an example benchmark to get an idea of its throughput:&lt;/p&gt;
+&lt;p&gt;Enter Redis; Redis is often used as a shared queue for workers. It allows us to implement the circular queue directly. Here is an example benchmark to get an idea of its throughput:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/12_redis_benchmark.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Since we use the queue data structure, the operation is always O(1). On top of that, we our system is now more orthogonal as the concerns of storage and coordination are separate.&lt;/p&gt;
+&lt;p&gt;Since we use the queue data structure, the operation is always O(1). On top of that, our system is now more orthogonal as the concerns of storage and coordination are separate.&lt;/p&gt;
 
 &lt;h3 id=&quot;collaboration&quot;&gt;Collaboration&lt;/h3&gt;
 
@@ -139,11 +153,11 @@ Servers: 1 &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;We spin up a second process on our server…&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Capacity: 400,000 Requests Per Day &lt;br /&gt;
-Time Through Repositories: 18 Hours
-Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;
-Processes: 2 &lt;br /&gt;
-Servers: 1 &lt;br /&gt;&lt;/p&gt;
+  &lt;p&gt;Capacity: 400,000 Requests Per Day&lt;br /&gt;
+Time Through Repositories: 18 Hours&lt;br /&gt;
+Capacity Needed: 1 Million Requests Per Day&lt;br /&gt;
+Processes: 2&lt;br /&gt;
+Servers: 1&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h3 id=&quot;scaling-out&quot;&gt;Scaling Out&lt;/h3&gt;
@@ -151,13 +165,13 @@ Servers: 1 &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;We are doing a decent job of maximizing our machines so we spun up two more servers with two processes each.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Capacity: 1,200,000 Requests Per Day &lt;br /&gt;
-Time Through Repositories: &lt;strong&gt;6 Hours&lt;/strong&gt;
+  &lt;p&gt;Capacity: 1,200,000 Requests Per Day&lt;br /&gt;
+Time Through Repositories: &lt;strong&gt;6 Hours&lt;/strong&gt;&lt;br /&gt;
 Processes: 6 &lt;br /&gt;
-Servers: 3 &lt;br /&gt;&lt;/p&gt;
+Servers: 3&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Now, four times (every 6 hours) we scrape the top 100,000 repositories on Github using 3 servers (represented by the dispatcher objects) which are coordinated by a Redis queue. This is well within our 8 hour window!&lt;/p&gt;
+&lt;p&gt;Now, four times a day (every 6 hours) we scrape the top 100,000 repositories on Github using 3 servers (represented by the dispatcher objects) which are coordinated by a Redis queue. This is well within our 8 hour window!&lt;/p&gt;
 
 &lt;p&gt;In total, roughly 1.2 million requests per day are made to Github (don’t worry, we won’t be overwhelming them anytime soon).&lt;/p&gt;
 
@@ -170,19 +184,19 @@ Servers: 3 &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Or is it?&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; We can get more out of our hardware. Our processes are memory hogs. However, the tradeoff of developer time working on optimizing and already cheap process was not worth the opportunity cost of further development.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; We can get more out of our hardware. Our processes are memory hogs. However, the tradeoff of developer time spent working on optimizing an already cheap process was not worth the opportunity cost of further development.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;cant-work-too-busy-robust-processes-and-centralized-control&quot;&gt;Can’t Work, Too Busy: Robust Processes and Centralized Control&lt;/h1&gt;
+&lt;h2 id=&quot;cant-work-too-busy-robust-processes-and-centralized-control&quot;&gt;Can’t Work, Too Busy: Robust Processes and Centralized Control&lt;/h2&gt;
 
-&lt;h2 id=&quot;more-servers-more-headaches&quot;&gt;More Servers, More Headaches&lt;/h2&gt;
+&lt;h3 id=&quot;more-servers-more-headaches&quot;&gt;More Servers, More Headaches&lt;/h3&gt;
 
 &lt;p&gt;Now that we have six processes, all of them must be micromanaged. Why? The remote SSH connection (to each process) must remain open on our local machine to run the scraper process. Overall, this means six open connections for monitoring, controlling, and restarting. Do I need to tell you this is &lt;em&gt;extremely&lt;/em&gt; time consuming?&lt;/p&gt;
 
 &lt;p&gt;A normal day might look like the following: wake up, check on the processes from the night before, and—&lt;/p&gt;
 
-&lt;p&gt;*Gasp!* The scrapers all crashed in the middle of the night!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Gasp!&lt;/em&gt; The scrapers all crashed in the middle of the night!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/16_dilbert.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -203,11 +217,11 @@ Servers: 3 &lt;br /&gt;&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Babysitting the scrapers required that there constantly be something knocking at the back of our mind. This grew especially tiresome whenever we needed full concentration to focus on something important; not a very efficient use of time at all.&lt;/p&gt;
+&lt;p&gt;Babysitting the scrapers meant we were constantly distracted. This grew especially tiresome whenever we needed full concentration to focus on something important; not a very efficient use of time at all.&lt;/p&gt;
 
-&lt;p&gt;Much of this had to do with handling brittle data. Trying to rescue every edge-case for data we can’t control was too time expensive. We needed failover and process recycling.&lt;/p&gt;
+&lt;p&gt;Much of this had to do with handling brittle data. We were essentially trying to rescue every edge-case for data we can’t control. This cost too much time. We needed failover and process recycling.&lt;/p&gt;
 
-&lt;h2 id=&quot;how-can-we-stop-micromanaging-our-scrapers&quot;&gt;How can we stop micromanaging our scrapers?&lt;/h2&gt;
+&lt;h3 id=&quot;how-can-we-stop-micromanaging-our-scrapers&quot;&gt;How can we stop micromanaging our scrapers?&lt;/h3&gt;
 
 &lt;p&gt;As we mentioned, in order to keep the scrapers running, a connection had to remain alive between our local machines and the remote ones. Why? The scraper process is attached to the SSH session. In Linux, everything is a process and the scraper process is a child process of our SSH session. Therefore if the ssh session dies, so too does the scraper process.&lt;/p&gt;
 
@@ -215,7 +229,7 @@ Servers: 3 &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Enter daemons. Daemons are background processes that are in no way attached to a terminal so we can close the SSH connection and it will still run. One of the downsides of this is the necessity of thorough logging: no longer will the SSH connection be active, which means that even if the daemon’s output was printed to STDOUT, there would be no way to see it.&lt;/p&gt;
 
-&lt;h2 id=&quot;binding-daemons-to-our-will&quot;&gt;Binding Daemons to Our Will&lt;/h2&gt;
+&lt;h3 id=&quot;binding-daemons-to-our-will&quot;&gt;Binding Daemons to Our Will&lt;/h3&gt;
 
 &lt;p&gt;We have these background processes, so how do we ensure the daemons are always running? We first considered Monit, but it was much, much more than we needed and the time required to familiarize ourselves with it just wasn’t worth it.&lt;/p&gt;
 
@@ -232,7 +246,7 @@ Servers: 3 &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;We initiate this entire management process with a CLI application.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-power-of-daemons&quot;&gt;The Power of Daemons&lt;/h2&gt;
+&lt;h3 id=&quot;the-power-of-daemons&quot;&gt;The Power of Daemons&lt;/h3&gt;
 
 &lt;p&gt;Below, you can see the status call of the CLI app we’ve written to remotely manage our daemons:&lt;/p&gt;
 
@@ -240,15 +254,15 @@ Servers: 3 &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;From our one console, with a few keyboard strokes, we can check on all of our scrapers. Centralized control makes deployment simple, monitoring a joy (if that’s a thing), and restarting painless. No longer do the processes have to be micromanaged.&lt;/p&gt;
 
-&lt;h1 id=&quot;growing-pains-system-bottlenecks-and-system-tuning&quot;&gt;Growing Pains: System Bottlenecks and System Tuning&lt;/h1&gt;
+&lt;h2 id=&quot;growing-pains-system-bottlenecks-and-system-tuning&quot;&gt;Growing Pains: System Bottlenecks and System Tuning&lt;/h2&gt;
 
 &lt;p&gt;We’ve been acquiring data during the 7 days that we’ve been working on the project and the database has reached a few hundred-thousand records.&lt;/p&gt;
 
-&lt;h2 id=&quot;more-questions-more-data&quot;&gt;More Questions, More Data&lt;/h2&gt;
+&lt;h3 id=&quot;more-questions-more-data&quot;&gt;More Questions, More Data&lt;/h3&gt;
 
 &lt;p&gt;We want to answer questions related to the past 30 and 90 days. We could wait 83 days, but we are programmers; we can do better. The next phase involved scraping the last 90 days of data as a one-time job. Our estimate was that it would take roughly 3 days with our 6 processes.&lt;/p&gt;
 
-&lt;h2 id=&quot;more-data-more-problems&quot;&gt;More data, More Problems&lt;/h2&gt;
+&lt;h3 id=&quot;more-data-more-problems&quot;&gt;More data, More Problems&lt;/h3&gt;
 
 &lt;p&gt;We tweaked our scrapers to grab historical data related over the past 90 days. As we quickly found out, more data meant new problems:&lt;/p&gt;
 
@@ -257,7 +271,7 @@ Servers: 3 &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Only scraping daily data brought in around 25,000 new records a day, but we were now getting hundreds of thousands to millions of records a day. Our request capacity quickly plummeted to 30% of what we expected.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Capacity: 300,000 Requests Per Day &lt;br /&gt;
+  &lt;p&gt;Capacity: ~300,000 Requests Per Day &lt;br /&gt;
 Time Through Repositories: 24 Hours
 Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;
 Processes: 6 &lt;br /&gt;
@@ -270,37 +284,29 @@ Servers: 3 &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;At 30% capacity (of 1.2 Million requests), it will take 10 days to retrieve all the data needed. That’s far too long.&lt;/p&gt;
 
-&lt;h2 id=&quot;putting-on-our-thinking-caps&quot;&gt;Putting on Our Thinking Caps&lt;/h2&gt;
+&lt;h3 id=&quot;putting-on-our-thinking-caps&quot;&gt;Putting on Our Thinking Caps&lt;/h3&gt;
 
 &lt;p&gt;Our scrapers are waiting on something in the system. What should be considered?&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/20_thinking_1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Well, our server activity hasn’t increased, in fact it has decreased, so we can eliminate the scraper servers right off the bat.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Well, our server activity hasn’t increased, in fact it has decreased, so we can eliminate the scraper servers right off the bat.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/20_thinking_2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Our request activity has decreased, so it can’t be anything to do with Github.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;Our request activity has decreased, so it can’t be anything to do with Github.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/21_thinking_2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;The only difference is the number of records that are being retrieved. Now that our responses are often rich with new data that needs to be stored, is it possible the DB server is being overwhelmed? No, the CPU usage is high, but far from being overwhelmed.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;The only difference is the number of records that are being retrieved. Now that our responses are often rich with new data that needs to be stored, is it possible the DB server is being overwhelmed? No, the CPU usage is high, but far from being overwhelmed.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/22_thinking_3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;All that remains is something to do with Postgres or the connections to Postgres.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;All that remains is something to do with Postgres or the connections to Postgres.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/23_thinking_4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;is-postgres-itself-being-overwhelmed&quot;&gt;Is Postgres Itself being Overwhelmed?&lt;/h2&gt;
+&lt;h3 id=&quot;is-postgres-itself-being-overwhelmed&quot;&gt;Is Postgres Itself being Overwhelmed?&lt;/h3&gt;
 
 &lt;p&gt;With 6 processes, we are writing to the database more often. Is it possible that Postgres can’t handle writes from all six servers at once?&lt;/p&gt;
 
@@ -480,13 +486,13 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;vrr-oom&quot;&gt;Vrr-OOM!&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/34_vrroooom.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
 &lt;blockquote&gt;
   &lt;p&gt;Capacity: ~1,000,000 Requests Per Day &lt;br /&gt;
 Time Through Repositories: ~7 Hours &lt;br /&gt;
 Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/34_vrroooom.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;At this point, we are now back to the capacity that we had originally anticipated. You’ll notice that 5th gear was never reached! That is not a mistake. Our acquisition could still be further tuned, but we’ll get to that later.&lt;/p&gt;
 
@@ -502,7 +508,9 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;No one wants to see OSW that bad!&lt;/p&gt;
 
-&lt;p&gt;Here is a sample query of what is required to display the webpage:&lt;/p&gt;
+&lt;h3 id=&quot;putting-our-thinking-caps-back-on&quot;&gt;Putting our Thinking Caps Back On…&lt;/h3&gt;
+
+&lt;p&gt;This is a typical query (1 of 16) displayed on the webpage:&lt;/p&gt;
 
 &lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hit_count&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;&quot;users&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INNER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;issue_comments&lt;/span&gt;
@@ -513,9 +521,6 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 &lt;span class=&quot;k&quot;&gt;GROUP&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ORDER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;BY&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hit_count&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-
-&lt;h3 id=&quot;putting-our-thinking-caps-back-on&quot;&gt;Putting our Thinking Caps Back On…&lt;/h3&gt;
-
 &lt;p&gt;Here is an analysis of the query above:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/37_front_end_execution_time.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -920,8 +925,13 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;And don’t forget to visit &lt;a href=&quot;http://opensourcewatch.io&quot;&gt;Open Source Watch&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;https://www.gravatar.com/avatar/f5e2ae68171d1c9568bb63a18d0ea516.jpg&quot; alt=&quot;&quot; /&gt;
-Hiring? I’m &lt;a href=&quot;http://getmichaelonboard.com&quot;&gt;looking&lt;/a&gt;!&lt;/p&gt;
+&lt;div&gt;
+  &lt;a href=&quot;http://getmichaelonboard.com/&quot;&gt;&lt;img class=&quot;gravitar&quot; src=&quot;https://secure.gravatar.com/avatar/6ec313ee09eeb69eddd3789f98a3d2b2&quot; /&gt;&lt;/a&gt;
+
+  &lt;a href=&quot;http://www.numbluk.com/credentials&quot;&gt;&lt;img class=&quot;gravitar&quot; src=&quot;https://www.gravatar.com/avatar/fd080461b35c3dcb5911e38d5f58c5af&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We are two full stack developers… and we are looking for work! Click our beautiful faces to check out our websites.&lt;/p&gt;
 
 &lt;h4 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h4&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
@@ -930,7 +940,7 @@ Hiring? I’m &lt;a href=&quot;http://getmichaelonboard.com&quot;&gt;looking&lt;
       &lt;p&gt;Check &lt;a href=&quot;http://www.brianstorti.com/implementing-a-priority-queue-in-ruby/&quot;&gt;here&lt;/a&gt; for more on Binary Heaps.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><summary type="html"></summary></entry><entry><title type="html">Javascript Context</title><link href="/getmichaelonboard/jekyll/update/javascript/2016/09/12/javascript-context.html" rel="alternate" type="text/html" title="Javascript Context" /><published>2016-09-12T00:00:00-07:00</published><updated>2016-09-12T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/javascript/2016/09/12/javascript-context</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/javascript/2016/09/12/javascript-context.html">&lt;h1 id=&quot;scope-in-javascript&quot;&gt;Scope in JavaScript&lt;/h1&gt;
+&lt;/div&gt;</content><summary type="html"></summary></entry><entry><title type="html">Javascript Context</title><link href="http://localhost:4000/jekyll/update/javascript/2016/09/12/javascript-context.html" rel="alternate" type="text/html" title="Javascript Context" /><published>2016-09-12T00:00:00-07:00</published><updated>2016-09-12T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/update/javascript/2016/09/12/javascript-context</id><content type="html" xml:base="http://localhost:4000/jekyll/update/javascript/2016/09/12/javascript-context.html">&lt;h1 id=&quot;scope-in-javascript&quot;&gt;Scope in JavaScript&lt;/h1&gt;
 &lt;p&gt;Scoping rules in any language are critical to understanding the context your code is operating in and what variables functions have access to.&lt;/p&gt;
 
 &lt;p&gt;In JavaScript everything lives inside a global object. Even the variables that you define are really just parameters on the global object. In the browser this global object would be &lt;code class=&quot;highlighter-rouge&quot;&gt;window.&lt;/code&gt;&lt;/p&gt;
@@ -1018,7 +1028,7 @@ Hiring? I’m &lt;a href=&quot;http://getmichaelonboard.com&quot;&gt;looking&lt;
 &lt;p&gt;Context loss can be very confusing once you start passing things around but the thing to remember is that the context binding happens when a function is called or executed and not when it is defined.&lt;/p&gt;
 
 &lt;p&gt;Next week I’ll be diving more in depth into closures and context loss.&lt;/p&gt;</content><summary type="html">Scope in JavaScript
-Scoping rules in any language are critical to understanding the context your code is operating in and what variables functions have access to.</summary></entry><entry><title type="html">Constructors Are Nothing Special</title><link href="/getmichaelonboard/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special.html" rel="alternate" type="text/html" title="Constructors Are Nothing Special" /><published>2016-08-18T00:00:00-07:00</published><updated>2016-08-18T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special.html">&lt;h1 id=&quot;constructors&quot;&gt;Constructors&lt;/h1&gt;
+Scoping rules in any language are critical to understanding the context your code is operating in and what variables functions have access to.</summary></entry><entry><title type="html">Constructors Are Nothing Special</title><link href="http://localhost:4000/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special.html" rel="alternate" type="text/html" title="Constructors Are Nothing Special" /><published>2016-08-18T00:00:00-07:00</published><updated>2016-08-18T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special</id><content type="html" xml:base="http://localhost:4000/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special.html">&lt;h1 id=&quot;constructors&quot;&gt;Constructors&lt;/h1&gt;
 
 &lt;p&gt;In other languages like Ruby, or Python we have classes. In JavaScript we have constructor functions. Constructors make lazy, bossy, children objects.&lt;/p&gt;
 
@@ -1136,7 +1146,7 @@ Scoping rules in any language are critical to understanding the context your cod
 
 &lt;p&gt;In essence, JavaScript is a bossy language full of lazy children.&lt;/p&gt;
 
-&lt;p&gt;Yup. That pretty much sums it up.&lt;/p&gt;</content><summary type="html">Constructors</summary></entry><entry><title type="html">Mental Models: The Dom</title><link href="/getmichaelonboard/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM.html" rel="alternate" type="text/html" title="Mental Models: The Dom" /><published>2016-08-17T00:00:00-07:00</published><updated>2016-08-17T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM.html">&lt;h1 id=&quot;the-dom-is-an-idea-not-a-thing&quot;&gt;The DOM is an Idea… Not a Thing&lt;/h1&gt;
+&lt;p&gt;Yup. That pretty much sums it up.&lt;/p&gt;</content><summary type="html">Constructors</summary></entry><entry><title type="html">Mental Models: The Dom</title><link href="http://localhost:4000/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM.html" rel="alternate" type="text/html" title="Mental Models: The Dom" /><published>2016-08-17T00:00:00-07:00</published><updated>2016-08-17T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM</id><content type="html" xml:base="http://localhost:4000/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM.html">&lt;h1 id=&quot;the-dom-is-an-idea-not-a-thing&quot;&gt;The DOM is an Idea… Not a Thing&lt;/h1&gt;
 &lt;p&gt;When I first learned about the DOM I was confused about how it was referred to as a ‘thing’ that could be accessed (false) and as a way of representing things (true).&lt;/p&gt;
 
 &lt;p&gt;The keyword is ‘model’ AKA representation. The DOM is a blueprint but often it is used to refer to the object tree that is the result of parsing markup. So, I thought I’d share this distinction.&lt;/p&gt;
@@ -1178,7 +1188,7 @@ Scoping rules in any language are critical to understanding the context your cod
 &lt;h1 id=&quot;resources&quot;&gt;Resources&lt;/h1&gt;
 &lt;p&gt;https://www.kirupa.com/html5/traversing_the_dom.htm 
 https://dom.spec.whatwg.org/&lt;/p&gt;</content><summary type="html">The DOM is an Idea… Not a Thing
-When I first learned about the DOM I was confused about how it was referred to as a ‘thing’ that could be accessed (false) and as a way of representing things (true).</summary></entry><entry><title type="html">To Newbs: Recursion is Useful</title><link href="/getmichaelonboard/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees.html" rel="alternate" type="text/html" title="To Newbs: Recursion is Useful" /><published>2016-07-25T00:00:00-07:00</published><updated>2016-07-25T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees.html">&lt;h1 id=&quot;recursion&quot;&gt;Recursion&lt;/h1&gt;
+When I first learned about the DOM I was confused about how it was referred to as a ‘thing’ that could be accessed (false) and as a way of representing things (true).</summary></entry><entry><title type="html">To Newbs: Recursion is Useful</title><link href="http://localhost:4000/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees.html" rel="alternate" type="text/html" title="To Newbs: Recursion is Useful" /><published>2016-07-25T00:00:00-07:00</published><updated>2016-07-25T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees</id><content type="html" xml:base="http://localhost:4000/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees.html">&lt;h1 id=&quot;recursion&quot;&gt;Recursion&lt;/h1&gt;
 
 &lt;p&gt;I’ve often heard new programmers ask why recursion is so useful. My brother, a successful IOS developer still doesn’t see the value in recursion (at least I gather from our conversations).&lt;/p&gt;
 
@@ -1264,7 +1274,7 @@ When I first learned about the DOM I was confused about how it was referred to a
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Anything that has a basecase, or a continue-until-we-reach-the-end condition, is a great use of recursion. The solution to the base case ripples through all the callbacks on the stack until we get to the top call, which aggregates all the calls together.&lt;/p&gt;</content><summary type="html">Recursion</summary></entry><entry><title type="html">WTF Javascript!?</title><link href="/getmichaelonboard/jekyll/update/javascript/2016/07/11/WTF-javascript.html" rel="alternate" type="text/html" title="WTF Javascript!?" /><published>2016-07-11T00:00:00-07:00</published><updated>2016-07-11T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/javascript/2016/07/11/WTF-javascript</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/javascript/2016/07/11/WTF-javascript.html">&lt;p&gt;This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t you just be like everyone else.&lt;/p&gt;
+&lt;p&gt;Anything that has a basecase, or a continue-until-we-reach-the-end condition, is a great use of recursion. The solution to the base case ripples through all the callbacks on the stack until we get to the top call, which aggregates all the calls together.&lt;/p&gt;</content><summary type="html">Recursion</summary></entry><entry><title type="html">WTF Javascript!?</title><link href="http://localhost:4000/jekyll/update/javascript/2016/07/11/WTF-javascript.html" rel="alternate" type="text/html" title="WTF Javascript!?" /><published>2016-07-11T00:00:00-07:00</published><updated>2016-07-11T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/update/javascript/2016/07/11/WTF-javascript</id><content type="html" xml:base="http://localhost:4000/jekyll/update/javascript/2016/07/11/WTF-javascript.html">&lt;p&gt;This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t you just be like everyone else.&lt;/p&gt;
 
 &lt;p&gt;I feel vaguely guilty now, a little like that teacher who called young Einstein dumb. Turns out prototypal inheritance is awesome. Cue Highschool Musical and other stories of upsetting the status-quo.
 So…&lt;/p&gt;
@@ -1282,7 +1292,7 @@ So…&lt;/p&gt;
 
 &lt;p&gt;Anyway, the advantage of this tyranny (who knew there were advantages to tyranny?) is that your code is DRY. Think about the case when you have a 1,000 or a 1,000,000 instances (clones) — do you really want to duplicate shared behavior? Since we are all obsessive about computational efficiency… the answer is no.&lt;/p&gt;
 
-&lt;p&gt;So, with classes, we have a thousand clones running around shooting guns. In Javascript all the clones just tell Boba to take care of it. Finally, clones have the time to take that pottery class they’ve always wanted to…&lt;/p&gt;</content><summary type="html">This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t you just be like everyone else.</summary></entry><entry><title type="html">Do You Really Know How Functions Work in Javascript?</title><link href="/getmichaelonboard/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work.html" rel="alternate" type="text/html" title="Do You Really Know How Functions Work in Javascript?" /><published>2016-07-04T00:00:00-07:00</published><updated>2016-07-04T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work.html">&lt;p&gt;A function is pretty simple, right? It’s just a reference to a block of code that get’s executed when called…&lt;/p&gt;
+&lt;p&gt;So, with classes, we have a thousand clones running around shooting guns. In Javascript all the clones just tell Boba to take care of it. Finally, clones have the time to take that pottery class they’ve always wanted to…&lt;/p&gt;</content><summary type="html">This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t you just be like everyone else.</summary></entry><entry><title type="html">Do You Really Know How Functions Work in Javascript?</title><link href="http://localhost:4000/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work.html" rel="alternate" type="text/html" title="Do You Really Know How Functions Work in Javascript?" /><published>2016-07-04T00:00:00-07:00</published><updated>2016-07-04T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work</id><content type="html" xml:base="http://localhost:4000/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work.html">&lt;p&gt;A function is pretty simple, right? It’s just a reference to a block of code that get’s executed when called…&lt;/p&gt;
 
 &lt;p&gt;Kind of, but not quite. You see, functions also remember scope and bind to that scope when called, even when the context has changed, they can remember their local context. This is called a closure.&lt;/p&gt;
 
