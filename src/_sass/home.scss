@@ -1,0 +1,49 @@
+h3 {
+  font-weight: bold;
+}
+
+.bio {
+  position: relative;
+}
+
+.headshot {
+  vertical-align: top;
+  position: absolute;
+  left: -120px;
+
+  img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+.slideshow-links {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+
+  li {
+    margin: 0;
+  }
+}
+
+.left-column {
+  width: 17%;
+  padding: 1%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.right-column {
+  width: 77%;
+  padding: 1%;
+  display: inline-block;
+}
+
+@media (max-width: 720px) {
+  .left-column, .right-column{
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}

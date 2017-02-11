@@ -1,0 +1,28 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "minima";
+
+.post img {
+  position: relative;
+  left: 50%;
+  max-width: 100%;
+  display: block;
+  transform: translateX(-50%);
+  padding: 12px 0;
+}
+
+hr {
+  margin-bottom: 1rem;
+}
+
+img.gravitar {
+  left: 0;
+  display: inline-block;
+  max-width: none;
+  transform: translateX(0);
+}
+
+@import "home";

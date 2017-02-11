@@ -1,0 +1,221 @@
+---
+layout: default
+---
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" />
+<link rel="stylesheet" type="text/css" href="assets/resume.css" media="all" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#expander").click(function(){
+			$("#experiments").slideDown();
+			$("#experiments_overview").slideUp();
+		});
+	});
+</script>
+
+<body>
+
+<div id="doc2" class="yui-t7">
+<div id="inner" style="margin-top: 10px;">
+
+	<div id="hd">
+		<div class="yui-gc">
+			<div class="yui-u first">
+				<h1>Michael Mentele</h1>
+				<h2>Full Stack Web Developer</h2>
+			</div>
+
+			<div class="yui-u">
+				<div class="contact-info">
+					<a  href="https://michaelrmentele.github.io/index.html"><h3 style="display: inline;"h3>Portfolio</h3></a>
+					<a href="https://medium.com/@michaelrmentele"><h3 style="display: inline;" >Blog</h3></a>
+					<a href="https://github.com/michaelrmentele"><h3 style="display: inline;" >Github</h3></a>
+					<a href="http://michaelrmentele.com"><h3 style="display: inline;" >Personal</h3></a>
+
+					<h3><a href="mailto:michaelrmentele@gmail.com">michaelrmentele@gmail.com</a></h3>
+					<h3>206 618 4282</h3>
+				</div><!--// .contact-info -->
+			</div>
+		</div><!--// .yui-gc -->
+	</div><!--// hd -->
+
+	<div id="bd">
+		<div id="yui-main">
+			<div class="yui-b">
+				<div class="yui-gf">
+					<div class="yui-u first">
+						<h2>Message</h2>
+					</div>
+					<div class="yui-u">
+						<p>
+							Recently, I built Open Source Watch (OSW); an application consisting
+							of 16+ processes scaled up and out across 8 servers making several million requests against github per day and persisting
+							20,000,000+ records to a relational database with a light AJAXified frontend.
+						</p>
+						<br>
+						<p>
+							OSW is primarily a server side data processing project
+							but I am also grounded in Javascript and frontend patterns. I can pick up any framework flavor of the week. I've
+							used Backbone to create a Trello-like app that interfaces with a RESTful Rails 5 API via JSON web tokens.
+						</p>
+					</div>
+				</div><!--// .yui-gf -->
+
+				<div class="yui-gf">
+					<div class="yui-u first">
+						<h2>Spotlight</h2>
+					</div>
+					<div class="yui-u">
+						<div class="osw-splash" style="vertical-align: top;">
+							<h2 style="display: block;"> Open Source Watch</h2>
+							<small style="font-style: italic;">Tracking Open-Source Contributions</small>
+							<img class="osw-logo" src="assets/osw-logo.png" alt="">
+						</div>
+						<div style="width: 64%; display: inline-block;">
+
+							<ul class="osw-stats">
+								<li>16 processes across 8 servers making 2,000,000+ requests per day</li>
+								<li>Centralized process control and failover with daemons</li>
+								<li>Reduced query time from 50s to 200ms with materialized views</li>
+								<li>Tuned repeat job frequency distribution with Staggered Round-Robin Prioritized Queue-of-Queues scheme</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="yui-gf">
+					<div class="yui-u first">
+						<h2>Projects</h2>
+					</div>
+					<div class="yui-u">
+
+						<div class="talent">
+							<h2><a href="https://michaelrmentele.github.io/frontend-projects.html">Frontend</h2></a>
+
+							<p><a href="https://michaelrmentele.github.io/client-side-apps/mrello-board/public/index.html">Mrello Client</a> - Trello-like client communicating to API with signed JWTs.
+							</p>
+							<br>
+
+							<p><a href="https://michaelrmentele.github.io/client-side-apps/todos-remastered/public/todos.html">Backbone Todos</a> - Dynamically derives categories from todos.
+							</p>
+
+						</div>
+
+						<div class="talent">
+							<h2><a href="https://michaelrmentele.github.io/backend-projects.html">Backend</a></h2>
+
+							<p><a href="https://github.com/MichaelrMentele/mrello-api">Mrello API</a> - Rails 5 API serving Backbone client with a RESTful API.</p>
+							<br>
+
+							<p><a href="http://kelp-business-review.herokuapp.com/">Kelp</a> - Yelp-like app featuring Stripe webhooks, service objects, and roles.</p>
+						</div>
+
+						<div class="talent">
+							<h2><a href="https://michaelrmentele.github.io/">More</a></h2>
+
+							<p><a href="https://github.com/MichaelrMentele/MIT-6.002-Intro-to-CS/tree/MIT-6.002-Intro-to-CS/PythonScripts">MIT: Intro to CS</a> - Search algorithms and Big O. Projects written in Python. </p>
+							<br>
+
+							<p><a href="https://github.com/MichaelrMentele/katas">Katas</a> - Ciphers, puzzles, and more.</p>
+						</div>
+
+					</div>
+				</div><!--// .yui-gf-->
+
+				<div class="yui-gf">
+
+					<div class="yui-u first">
+						<h2>Trajectory</h2>
+						<p>2016</p>
+					</div><!--// .yui-u -->
+
+					<div class="yui-u">
+
+						<div class="job last">
+							<h2>Software Transition</h2>
+							<h3>Web Developer &mdash; Current</h3>
+							<h4>7 Months</h4>
+							<p>
+								Development period to build marketable skills and build applications.<br>
+							&bull; 50,000+ lines of code over 1,800+ hours across 1400+ Github contributions.
+							</p>
+						</div>
+					</div><!--// .yui-u -->
+				</div><!--// .yui-gf -->
+
+				<div class="yui-gf">
+
+					<div class="yui-u first">
+						<h2>Experience</h2>
+						<p style="padding: 0;">2012 - 2014</p>
+					</div><!--// .yui-u -->
+
+					<div class="yui-u">
+
+						<div class="job last">
+							<h2>Schweitzer Engineering Labs</h2>
+							<h3>Associate Power Engineer in R&D</h3>
+							<h4>2 Years</h4>
+							<p>Authored specs, tests, and embedded control logic for critical infrastructure of international and domestic clients e.g. Saudi Aramco and PG&E.
+							<br>
+								&bull; Created 3+ new protection logic specifications and 10+ functional tests
+								<br>
+								&bull; Performed & Automated 50+ functional tests across 10+ projects
+								<br>
+								&bull; Identified and owned 70+ logged system issues
+						</div>
+					</div>
+				</div>
+
+				<div class="yui-gf last">
+					<div class="yui-u first">
+						<h2>University</h2>
+						<p style="padding: 0;">2012</p>
+					</div>
+					<div class="yui-u">
+						<h2>Washington State - Pullman, Wa</h2>
+						<h3>BS, Electrical Engineering &mdash; President's Honor Roll</h3>
+						&bull; Successfully led multi-national senior design team for Avista Utilities.
+						<br>
+						<!-- &bull; President's Honor Roll all four years. 3.8 GPA EE coursework. 3.9 GPA CS coursework.
+						<br> -->
+						<!-- &bull; CS 251 &mdash; Intro to programming using C and C++
+						<br>
+						&bull; CS 214 &mdash; VHDL/Verilog to build computer components (CLA, timers, flip-flops...)
+						<br>
+						&bull; CS 234 &mdash; Mips32 Assembly and C to program a Cerebot board to navigate a track. -->
+					</div>
+
+				<!-- 	<div class="yui-u">
+						<br>
+						<h2>MITx and UBCx</h2>
+						<h3>Course Certificates &mdash; 2014</h3>
+						&bull; Completed MIT's intro to computer science &mdash; 4.0
+						<br>
+						&bull; Completed UBC' systematic program design &mdash; 4.0
+						<br>
+					</div>
+
+					<div class="yui-u">
+						<br>
+						<h2>Launchschool</h2>
+						<h3>Web Development &mdash; 2016</h3>
+					</div> -->
+
+				</div><!--// .yui-gf -->
+
+
+			</div><!--// .yui-b -->
+		</div><!--// yui-main -->
+
+
+
+	</div><!--// bd -->
+<p style="text-align: center">Michael Mentele &mdash; <a href="mailto:michaelrmentele@gmail.com">michaelrmentele@gmail.com</a> &mdash; 206 618 4282
+		</p>
+
+</div><!-- // inner -->
+
+
+</div><!--// doc -->
