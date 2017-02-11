@@ -1,0 +1,18 @@
+# JavaScript
+
+When I was young and procrastinated I used to think curly braces were evil and that was my primary reason for not learning javascript. It looked weird and I didn't like it.
+
+Foolishness.
+
+## First Class Functions
+
+## Function Expressions vs. Function Declarations
+
+## Javascript compiler
+
+## Hoisting
+
+## Pass-by-Value
+
+Everything in JS in pass-by-value, including functions. This is great. Why? Because everything that isn't a primitive (and immutable) is a container for a reference that points to an object in memory. That reference is a value. Some sequence of bits that addresses a location. This means we can pass that address around and call it in other.
+
