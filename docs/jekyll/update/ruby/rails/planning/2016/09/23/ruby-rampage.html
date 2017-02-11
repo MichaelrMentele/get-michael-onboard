@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hackathon: Getting Burned</title>
+  <meta name="description" content="I was wrapping up 310 (Robust Production Quality Applications with Rails) after 3 busy weeks and 168 hours of work. I felt very comfortable building modest a...">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/getmichaelonboard/jekyll/update/ruby/rails/planning/2016/09/23/ruby-rampage.html">
+  <link rel="alternate" type="application/rss+xml" title="Get Michael Onboard" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Get Michael Onboard</a>
+
+    <nav class="site-nav">
+      <span class="menu-icon">
+        <svg viewBox="0 0 18 15" width="18px" height="15px">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </span>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/blog.html">Blog</a>
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/resume.html">Resume</a>
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Hackathon: Getting Burned</h1>
+    <p class="post-meta"><time datetime="2016-09-23T00:00:00-07:00" itemprop="datePublished">Sep 23, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>I was wrapping up 310 (Robust Production Quality Applications with Rails) after 3 busy weeks and 168 hours of work. I felt very comfortable building modest applications end-to-end and integrating with third party API’s like Stripe and Twilio.</p>
+
+<p>I was considering the review project I was going to build (#spaced repetition anyone?) that would encapsulate the course. As I’m reaching this point Gavin McGimpsey (we know him, we love him) posted about Ruby Rampage–a 48 hour hackathon.</p>
+
+<p>Serendipity! It’s always nice to outsource motivation for mundane work so you can save a portion of your willpower (AKA glucose/ketones) to stay mentally ‘frosty’ (we are all cognitive misers, so sayeth Nobel Psychologist Daniel Kahneman).</p>
+
+<p>Plus, it was a chance to compete–iron sharpens iron and all that.</p>
+
+<h2 id="the-verdict">The Verdict</h2>
+<p>So how did it go? Well, I went into the weekend confident, slipped on the starting line, and failed completely. It was terrific.</p>
+
+<p>My project was incomplete, bolts exposed and no paint. I was too embarrassed to submit it!</p>
+
+<p>Let’s explore why this happened.</p>
+
+<h2 id="first-the-project">First, The Project</h2>
+<p>What was I building? In the spring I’d built a simple Python agent to randomly send my girlfriend SMS messages (so I didn’t have to) and I wanted to make it into a real application.</p>
+
+<p>It seemed simple: an SMS batching app where you could write up a pool of messages, drag and drop them into different dispensers, configure the dispenser, and then use a clock process to spawn Sidekiq processes that would query the DB for overdue messages and use Twilio’s API to send them.</p>
+
+<p>And so, <b>Emote!</b> was born.</p>
+
+<h2 id="day-1-grand-disillusionment">Day 1: Grand Disillusionment</h2>
+
+<p>Something absurd happened; in a 48 hour contest I’d somehow managed to miss the first 16 hours. I’d tripped over my own feet from the starting block on a 100m dash. Despite constant reminders I’d somehow mixed up the time conversion. Wow, this was really stupid. I thought it was such a trivial thing that I gave it 3 seconds of attention.</p>
+
+<p>That was mistake number one. But hey, it could have been fine, I could have adapted pretty easily. I’d only missed about 6 hours of actual work (due to the way it overlapped with my schedule).</p>
+
+<p>But I didn’t.</p>
+
+<p>Did I learn from that mistake and go: ‘hey, I have less time, maybe I should rescope.’ Sanity check my feature list.’ Nope, I was behind and the panic monster was roaring in my ear.</p>
+
+<p>I entered into a code frenzy. I wrote some broken HTML/CSS, then some broken server side code, a few tests, and basically jumped around my code base like a chimpanzee chasing a squirrel through a tree. I spent most of the day flailing around. I made bugs and the more bugs I made the more I wanted to rush. It was a vicious cycle.</p>
+
+<p>It was possibly the most unproductive 14 hours of coding ever. A day of temporary insanity.</p>
+
+<h2 id="day-2-all-i-can-do-is-all-i-can-do">Day 2: All I can do, is all I can do</h2>
+<p>When I woke up the next day, yesterday seemed like a bad dream. Had I really panicked? That wasn’t me–t was completely illogical! I then, rationally reminded myself, that I was a human being, driven by emotions, and therefore very probably just as capable of being irrational as any person–yesterday, being case in point.</p>
+
+<p>I ran my fingers through my hair, blew out a breath and reminded myself of two things: 1) I was doing this project as a review project and the outcome of the hackathon was ultimately irrelevant and 2) that it the hackathon a new context for me and sucking at something new is always step one.</p>
+
+<p>Immediately, the pressure lifted. I looked at my code, thoughts flashing like lighting bugs, and inspiration ignited. I simplified the scope of my project and got to work, fingers flying across the keyboard, the code singing to me like some kind of MVC choir. Miraculously I finished my project and won first place.</p>
+
+<p>Oh, no, wait a minute. I forgot life isn’t a movie. Damn.</p>
+
+<p>So, I didn’t miraculously finish but the code that I re-factored was a great foundation for finishing the project later. And if I hadn’t panicked I could have produced a tightly made little app that would have been competitive with apps made by people who were far senior to myself.</p>
+
+<p>I learned some lessons from this trial run and I’ll do better next time.</p>
+
+<h2 id="failure--reflection--growth">Failure + Reflection = Growth</h2>
+<p>Sometimes you know something theoretically but it hasn’t been anchored by experience. This was one of those moments.</p>
+
+<p>I’m happy it happened because the sooner the flaws in my thinking are exposed the sooner I can progress. I’d like to share a few tips and timely reminders brought home from this exercise:</p>
+
+<ul>
+  <li><b>Expect to suck</b> Learning and doing new things under pressure is a bad idea. This was a new context that I was unfamiliar with. I reminded myself of one of my most treasured beliefs (that I’ve carefully cultivated in myself) which is being okay with sucking at new things. I’ve actually begun to take pride in failing, because ‘failing’ is step one and success is step two. Bottom line: this belief takes the pressure off–which is good for learning.</li>
+  <li><b>Eustress vs Panic</b> Pressure is created by expectations that help drive you forward (much like TDD). It is right and proper to have have expectations but sometimes they need to be calibrated. Pressure is positive as long as it doesn’t tip into anxiety…</li>
+  <li><b>Anxiety is Sneaky</b> This isn’t the first time something like this has happened to me but it doesn’t happen often. The panic monster roared when I said: OMG! I have 32 hours to build this project and my rationality when running to hide in the cupboard. I should have reduced scope. But I let the pressure block me from considering alternative solutions.</li>
+  <li><b>Scope Tightly and Give yourself Margin for Error</b>. Basically, follow Agile methodologies: build an MVP, have a tight feedback loop, and iterate. There will be problems. Have time for debugging and margin for mistakes.</li>
+  <li><b>Slow is smooth and smooth is fast.</b> This is something my skydiving instructor told me that I repeat to myself often. Apparently, in this case, it still didn’t stick. Don’t build garbage, build on axiomatic* code.</li>
+</ul>
+
+<p><small>Axiomatic: Usually used in math or logical reasoning, an axiom is an irrefutable argument. Here I mean orthogonal, well composed, robust code.</small></p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>This experience was a real gem for me. And a wake up call–I really, really, really don’t want to be the type of person who learns fire is hot from getting burned. The importance of strategizing upfront, before any endeavor, cannot be understated.</p>
+
+<p>Next time I begin to rush I will remember this experience and remind myself that slow is smooth and smooth is fast. My hope is that next time you feel pressure and panic you will trigger (brain callback anyone?) and remind yourself of this as well.</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Get Michael Onboard</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Get Michael Onboard
+            
+            </li>
+            
+            <li><a href="mailto:michaelrmentele@gmail.com">michaelrmentele@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/michaelrmentele"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">michaelrmentele</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the technical site and blog of software engineer Michael Mentele.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

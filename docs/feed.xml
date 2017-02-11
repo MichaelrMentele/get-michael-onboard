@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-09T17:49:33-08:00</updated><id>http://localhost:4000//</id><title type="html">Get Michael Onboard</title><subtitle>This is the technical site and blog of software engineer Michael Mentele.
-</subtitle><entry><title type="html">How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web</title><link href="http://localhost:4000/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch.html" rel="alternate" type="text/html" title="How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web" /><published>2017-02-09T00:00:00-08:00</published><updated>2017-02-09T00:00:00-08:00</updated><id>http://localhost:4000/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch</id><content type="html" xml:base="http://localhost:4000/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch.html">&lt;p&gt;&lt;a href=&quot;http://www.opensourcewatch.io&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/getmichaelonboard/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="/getmichaelonboard/feed.xml" rel="self" type="application/atom+xml" /><link href="/getmichaelonboard/" rel="alternate" type="text/html" /><updated>2017-02-11T08:36:16-08:00</updated><id>/getmichaelonboard//</id><title type="html">Get Michael Onboard</title><subtitle>This is the technical site and blog of software engineer Michael Mentele.
+</subtitle><entry><title type="html">How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web</title><link href="/getmichaelonboard/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch.html" rel="alternate" type="text/html" title="How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web" /><published>2017-02-09T00:00:00-08:00</published><updated>2017-02-09T00:00:00-08:00</updated><id>/getmichaelonboard/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch.html">&lt;p&gt;&lt;a href=&quot;http://www.opensourcewatch.io&quot;&gt;
   &lt;img style=&quot;max-width: 30%;&quot; src=&quot;/assets/osw-logo.png&quot; alt=&quot;opensourcewatch logo&quot; id=&quot;osw_logo&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
@@ -926,9 +926,9 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;div&gt;
-  &lt;a href=&quot;http://getmichaelonboard.com/&quot;&gt;&lt;img class=&quot;gravitar&quot; src=&quot;https://secure.gravatar.com/avatar/6ec313ee09eeb69eddd3789f98a3d2b2&quot; /&gt;&lt;/a&gt;
-
   &lt;a href=&quot;http://www.numbluk.com/credentials&quot;&gt;&lt;img class=&quot;gravitar&quot; src=&quot;https://www.gravatar.com/avatar/fd080461b35c3dcb5911e38d5f58c5af&quot; /&gt;&lt;/a&gt;
+  
+  &lt;a href=&quot;http://getmichaelonboard.com/&quot;&gt;&lt;img class=&quot;gravitar&quot; src=&quot;https://secure.gravatar.com/avatar/6ec313ee09eeb69eddd3789f98a3d2b2&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;p&gt;We are two full stack developers… and we are looking for work! Click our beautiful faces to check out our websites.&lt;/p&gt;
@@ -940,7 +940,74 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
       &lt;p&gt;Check &lt;a href=&quot;http://www.brianstorti.com/implementing-a-priority-queue-in-ruby/&quot;&gt;here&lt;/a&gt; for more on Binary Heaps.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><summary type="html"></summary></entry><entry><title type="html">Javascript Context</title><link href="http://localhost:4000/jekyll/update/javascript/2016/09/12/javascript-context.html" rel="alternate" type="text/html" title="Javascript Context" /><published>2016-09-12T00:00:00-07:00</published><updated>2016-09-12T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/update/javascript/2016/09/12/javascript-context</id><content type="html" xml:base="http://localhost:4000/jekyll/update/javascript/2016/09/12/javascript-context.html">&lt;h1 id=&quot;scope-in-javascript&quot;&gt;Scope in JavaScript&lt;/h1&gt;
+&lt;/div&gt;</content><summary type="html"></summary></entry><entry><title type="html">Hackathon: Getting Burned</title><link href="/getmichaelonboard/jekyll/update/ruby/rails/planning/2016/09/23/ruby-rampage.html" rel="alternate" type="text/html" title="Hackathon: Getting Burned" /><published>2016-09-23T00:00:00-07:00</published><updated>2016-09-23T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/ruby/rails/planning/2016/09/23/ruby-rampage</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/ruby/rails/planning/2016/09/23/ruby-rampage.html">&lt;p&gt;I was wrapping up 310 (Robust Production Quality Applications with Rails) after 3 busy weeks and 168 hours of work. I felt very comfortable building modest applications end-to-end and integrating with third party API’s like Stripe and Twilio.&lt;/p&gt;
+
+&lt;p&gt;I was considering the review project I was going to build (#spaced repetition anyone?) that would encapsulate the course. As I’m reaching this point Gavin McGimpsey (we know him, we love him) posted about Ruby Rampage–a 48 hour hackathon.&lt;/p&gt;
+
+&lt;p&gt;Serendipity! It’s always nice to outsource motivation for mundane work so you can save a portion of your willpower (AKA glucose/ketones) to stay mentally ‘frosty’ (we are all cognitive misers, so sayeth Nobel Psychologist Daniel Kahneman).&lt;/p&gt;
+
+&lt;p&gt;Plus, it was a chance to compete–iron sharpens iron and all that.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-verdict&quot;&gt;The Verdict&lt;/h2&gt;
+&lt;p&gt;So how did it go? Well, I went into the weekend confident, slipped on the starting line, and failed completely. It was terrific.&lt;/p&gt;
+
+&lt;p&gt;My project was incomplete, bolts exposed and no paint. I was too embarrassed to submit it!&lt;/p&gt;
+
+&lt;p&gt;Let’s explore why this happened.&lt;/p&gt;
+
+&lt;h2 id=&quot;first-the-project&quot;&gt;First, The Project&lt;/h2&gt;
+&lt;p&gt;What was I building? In the spring I’d built a simple Python agent to randomly send my girlfriend SMS messages (so I didn’t have to) and I wanted to make it into a real application.&lt;/p&gt;
+
+&lt;p&gt;It seemed simple: an SMS batching app where you could write up a pool of messages, drag and drop them into different dispensers, configure the dispenser, and then use a clock process to spawn Sidekiq processes that would query the DB for overdue messages and use Twilio’s API to send them.&lt;/p&gt;
+
+&lt;p&gt;And so, &lt;b&gt;Emote!&lt;/b&gt; was born.&lt;/p&gt;
+
+&lt;h2 id=&quot;day-1-grand-disillusionment&quot;&gt;Day 1: Grand Disillusionment&lt;/h2&gt;
+
+&lt;p&gt;Something absurd happened; in a 48 hour contest I’d somehow managed to miss the first 16 hours. I’d tripped over my own feet from the starting block on a 100m dash. Despite constant reminders I’d somehow mixed up the time conversion. Wow, this was really stupid. I thought it was such a trivial thing that I gave it 3 seconds of attention.&lt;/p&gt;
+
+&lt;p&gt;That was mistake number one. But hey, it could have been fine, I could have adapted pretty easily. I’d only missed about 6 hours of actual work (due to the way it overlapped with my schedule).&lt;/p&gt;
+
+&lt;p&gt;But I didn’t.&lt;/p&gt;
+
+&lt;p&gt;Did I learn from that mistake and go: ‘hey, I have less time, maybe I should rescope.’ Sanity check my feature list.’ Nope, I was behind and the panic monster was roaring in my ear.&lt;/p&gt;
+
+&lt;p&gt;I entered into a code frenzy. I wrote some broken HTML/CSS, then some broken server side code, a few tests, and basically jumped around my code base like a chimpanzee chasing a squirrel through a tree. I spent most of the day flailing around. I made bugs and the more bugs I made the more I wanted to rush. It was a vicious cycle.&lt;/p&gt;
+
+&lt;p&gt;It was possibly the most unproductive 14 hours of coding ever. A day of temporary insanity.&lt;/p&gt;
+
+&lt;h2 id=&quot;day-2-all-i-can-do-is-all-i-can-do&quot;&gt;Day 2: All I can do, is all I can do&lt;/h2&gt;
+&lt;p&gt;When I woke up the next day, yesterday seemed like a bad dream. Had I really panicked? That wasn’t me–t was completely illogical! I then, rationally reminded myself, that I was a human being, driven by emotions, and therefore very probably just as capable of being irrational as any person–yesterday, being case in point.&lt;/p&gt;
+
+&lt;p&gt;I ran my fingers through my hair, blew out a breath and reminded myself of two things: 1) I was doing this project as a review project and the outcome of the hackathon was ultimately irrelevant and 2) that it the hackathon a new context for me and sucking at something new is always step one.&lt;/p&gt;
+
+&lt;p&gt;Immediately, the pressure lifted. I looked at my code, thoughts flashing like lighting bugs, and inspiration ignited. I simplified the scope of my project and got to work, fingers flying across the keyboard, the code singing to me like some kind of MVC choir. Miraculously I finished my project and won first place.&lt;/p&gt;
+
+&lt;p&gt;Oh, no, wait a minute. I forgot life isn’t a movie. Damn.&lt;/p&gt;
+
+&lt;p&gt;So, I didn’t miraculously finish but the code that I re-factored was a great foundation for finishing the project later. And if I hadn’t panicked I could have produced a tightly made little app that would have been competitive with apps made by people who were far senior to myself.&lt;/p&gt;
+
+&lt;p&gt;I learned some lessons from this trial run and I’ll do better next time.&lt;/p&gt;
+
+&lt;h2 id=&quot;failure--reflection--growth&quot;&gt;Failure + Reflection = Growth&lt;/h2&gt;
+&lt;p&gt;Sometimes you know something theoretically but it hasn’t been anchored by experience. This was one of those moments.&lt;/p&gt;
+
+&lt;p&gt;I’m happy it happened because the sooner the flaws in my thinking are exposed the sooner I can progress. I’d like to share a few tips and timely reminders brought home from this exercise:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;b&gt;Expect to suck&lt;/b&gt; Learning and doing new things under pressure is a bad idea. This was a new context that I was unfamiliar with. I reminded myself of one of my most treasured beliefs (that I’ve carefully cultivated in myself) which is being okay with sucking at new things. I’ve actually begun to take pride in failing, because ‘failing’ is step one and success is step two. Bottom line: this belief takes the pressure off–which is good for learning.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Eustress vs Panic&lt;/b&gt; Pressure is created by expectations that help drive you forward (much like TDD). It is right and proper to have have expectations but sometimes they need to be calibrated. Pressure is positive as long as it doesn’t tip into anxiety…&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Anxiety is Sneaky&lt;/b&gt; This isn’t the first time something like this has happened to me but it doesn’t happen often. The panic monster roared when I said: OMG! I have 32 hours to build this project and my rationality when running to hide in the cupboard. I should have reduced scope. But I let the pressure block me from considering alternative solutions.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Scope Tightly and Give yourself Margin for Error&lt;/b&gt;. Basically, follow Agile methodologies: build an MVP, have a tight feedback loop, and iterate. There will be problems. Have time for debugging and margin for mistakes.&lt;/li&gt;
+  &lt;li&gt;&lt;b&gt;Slow is smooth and smooth is fast.&lt;/b&gt; This is something my skydiving instructor told me that I repeat to myself often. Apparently, in this case, it still didn’t stick. Don’t build garbage, build on axiomatic* code.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;small&gt;Axiomatic: Usually used in math or logical reasoning, an axiom is an irrefutable argument. Here I mean orthogonal, well composed, robust code.&lt;/small&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This experience was a real gem for me. And a wake up call–I really, really, really don’t want to be the type of person who learns fire is hot from getting burned. The importance of strategizing upfront, before any endeavor, cannot be understated.&lt;/p&gt;
+
+&lt;p&gt;Next time I begin to rush I will remember this experience and remind myself that slow is smooth and smooth is fast. My hope is that next time you feel pressure and panic you will trigger (brain callback anyone?) and remind yourself of this as well.&lt;/p&gt;</content><summary type="html">I was wrapping up 310 (Robust Production Quality Applications with Rails) after 3 busy weeks and 168 hours of work. I felt very comfortable building modest applications end-to-end and integrating with third party API’s like Stripe and Twilio.</summary></entry><entry><title type="html">Javascript Context</title><link href="/getmichaelonboard/jekyll/update/javascript/2016/09/12/javascript-context.html" rel="alternate" type="text/html" title="Javascript Context" /><published>2016-09-12T00:00:00-07:00</published><updated>2016-09-12T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/javascript/2016/09/12/javascript-context</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/javascript/2016/09/12/javascript-context.html">&lt;h1 id=&quot;scope-in-javascript&quot;&gt;Scope in JavaScript&lt;/h1&gt;
 &lt;p&gt;Scoping rules in any language are critical to understanding the context your code is operating in and what variables functions have access to.&lt;/p&gt;
 
 &lt;p&gt;In JavaScript everything lives inside a global object. Even the variables that you define are really just parameters on the global object. In the browser this global object would be &lt;code class=&quot;highlighter-rouge&quot;&gt;window.&lt;/code&gt;&lt;/p&gt;
@@ -1028,7 +1095,58 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;Context loss can be very confusing once you start passing things around but the thing to remember is that the context binding happens when a function is called or executed and not when it is defined.&lt;/p&gt;
 
 &lt;p&gt;Next week I’ll be diving more in depth into closures and context loss.&lt;/p&gt;</content><summary type="html">Scope in JavaScript
-Scoping rules in any language are critical to understanding the context your code is operating in and what variables functions have access to.</summary></entry><entry><title type="html">Constructors Are Nothing Special</title><link href="http://localhost:4000/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special.html" rel="alternate" type="text/html" title="Constructors Are Nothing Special" /><published>2016-08-18T00:00:00-07:00</published><updated>2016-08-18T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special</id><content type="html" xml:base="http://localhost:4000/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special.html">&lt;h1 id=&quot;constructors&quot;&gt;Constructors&lt;/h1&gt;
+Scoping rules in any language are critical to understanding the context your code is operating in and what variables functions have access to.</summary></entry><entry><title type="html">Use Wishes to Solve Programming Problems</title><link href="/getmichaelonboard/jekyll/update/ruby/rails/planning/2016/09/02/solve-problems-with-wishes.html" rel="alternate" type="text/html" title="Use Wishes to Solve Programming Problems" /><published>2016-09-02T00:00:00-07:00</published><updated>2016-09-02T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/ruby/rails/planning/2016/09/02/solve-problems-with-wishes</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/ruby/rails/planning/2016/09/02/solve-problems-with-wishes.html">&lt;p&gt;Code is hard. Some problems just seem like too much and you don’t know where to start. The complexity is overwhelming or the topic is just too new.&lt;/p&gt;
+
+&lt;p&gt;Make a wish I say–make a wish!&lt;/p&gt;
+
+&lt;p&gt;Not upon a star or to your fairy god mother; I’m talking about every programmers friend–abstraction.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-wishlist&quot;&gt;The Wishlist&lt;/h2&gt;
+&lt;p&gt;The idea is simple, when you have a problem statement; write a highlevel list of functions you wish you had to solve the problem for you. This is call declarative abstraction.&lt;/p&gt;
+
+&lt;p&gt;Meaning, you ‘declare’ that there is this black box that crunches widgets into what-chits.&lt;/p&gt;
+
+&lt;p&gt;Let’s say I had to write a program that would run the matrix. Now, I have no idea how to code the Matrix but I can probably break it into a abstractions I wish existed and pretend some other smart guy would write them.&lt;/p&gt;
+
+&lt;p&gt;It might be like:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;runTheMatrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;matrixExists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;updateEnvironment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// I have no idea how to write this code&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;trackPeopleStates&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;    
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now, right now I’ve just broken the problem into two problems by ‘wishing’ I had a function that could handle the environment object and handle the people objects–the agents might do their own separate thing and interact with the environment through events. Again, no clue. The important thing is the problem space just got cut in half.&lt;/p&gt;
+
+&lt;p&gt;Alright, now we do the same thing for our updateEnvironment function. What does this funciton even do? Well, it like handles all the things not having to do with people. So things like buildings, weather, temperature of rooms and places, the night sky, physics etc.&lt;/p&gt;
+
+&lt;p&gt;We are assuming the matrix isn’t deterministic and that people will basically need event handlers for all of their actions. So the environment is a purely reactive environment.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;updateEnvironment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;handlePhysics&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// tracks the status of all molecules&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;handleAnimals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;handleWeather&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// The list goes on... how did those computers do it? Probably not functionally, probably with some kind of dynamically driven code that wrote itself and spawned the necessary functions to motivate the world but I digress.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Great, now we write a wishlist for handlePhysics(), and then… You guessed it! We do it again and again until we get to a problem we know how to solve.&lt;/p&gt;
+
+&lt;p&gt;From handlePhysics we might drill down to a function like:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;computeForce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;acceleration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;mass&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;acceleration&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;That’s it! This is a recursive problem decomposition algorithm. Start at the top, your high level ‘wishlist’ and keep going until you find something simple enough you can solve.&lt;/p&gt;
+
+&lt;p&gt;Now, go create the matrix!&lt;/p&gt;</content><summary type="html">Code is hard. Some problems just seem like too much and you don’t know where to start. The complexity is overwhelming or the topic is just too new.</summary></entry><entry><title type="html">Constructors Are Nothing Special</title><link href="/getmichaelonboard/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special.html" rel="alternate" type="text/html" title="Constructors Are Nothing Special" /><published>2016-08-18T00:00:00-07:00</published><updated>2016-08-18T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/javascript/2016/08/18/constructors-are-nothing-special.html">&lt;h1 id=&quot;constructors&quot;&gt;Constructors&lt;/h1&gt;
 
 &lt;p&gt;In other languages like Ruby, or Python we have classes. In JavaScript we have constructor functions. Constructors make lazy, bossy, children objects.&lt;/p&gt;
 
@@ -1146,7 +1264,7 @@ Scoping rules in any language are critical to understanding the context your cod
 
 &lt;p&gt;In essence, JavaScript is a bossy language full of lazy children.&lt;/p&gt;
 
-&lt;p&gt;Yup. That pretty much sums it up.&lt;/p&gt;</content><summary type="html">Constructors</summary></entry><entry><title type="html">Mental Models: The Dom</title><link href="http://localhost:4000/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM.html" rel="alternate" type="text/html" title="Mental Models: The Dom" /><published>2016-08-17T00:00:00-07:00</published><updated>2016-08-17T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM</id><content type="html" xml:base="http://localhost:4000/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM.html">&lt;h1 id=&quot;the-dom-is-an-idea-not-a-thing&quot;&gt;The DOM is an Idea… Not a Thing&lt;/h1&gt;
+&lt;p&gt;Yup. That pretty much sums it up.&lt;/p&gt;</content><summary type="html">Constructors</summary></entry><entry><title type="html">Mental Models: The Dom</title><link href="/getmichaelonboard/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM.html" rel="alternate" type="text/html" title="Mental Models: The Dom" /><published>2016-08-17T00:00:00-07:00</published><updated>2016-08-17T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/javascript/browser/dom/2016/08/17/Mental-Model-of-the-DOM.html">&lt;h1 id=&quot;the-dom-is-an-idea-not-a-thing&quot;&gt;The DOM is an Idea… Not a Thing&lt;/h1&gt;
 &lt;p&gt;When I first learned about the DOM I was confused about how it was referred to as a ‘thing’ that could be accessed (false) and as a way of representing things (true).&lt;/p&gt;
 
 &lt;p&gt;The keyword is ‘model’ AKA representation. The DOM is a blueprint but often it is used to refer to the object tree that is the result of parsing markup. So, I thought I’d share this distinction.&lt;/p&gt;
@@ -1159,7 +1277,7 @@ Scoping rules in any language are critical to understanding the context your cod
 &lt;h1 id=&quot;what-does-it-look-like-really&quot;&gt;What Does it Look Like &lt;i&gt;Really&lt;/i&gt;?&lt;/h1&gt;
 &lt;p&gt;When we read about the DOM we typically see something like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;dom.png&quot; caption=&quot;Image from Kirupa.com&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2016-08-17-mental-model-of-the-dom/dom.png&quot; caption=&quot;Image from Kirupa.com&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This image is not what we are interacting with. When the HTML is parsed it creates a global object we refer to as the window (AKA context) for Javascript that lives in the browser. By default all other JS objects will delegate to the window as their prototype. You could say that all other objects extend this global object.&lt;/p&gt;
 
@@ -1188,7 +1306,7 @@ Scoping rules in any language are critical to understanding the context your cod
 &lt;h1 id=&quot;resources&quot;&gt;Resources&lt;/h1&gt;
 &lt;p&gt;https://www.kirupa.com/html5/traversing_the_dom.htm 
 https://dom.spec.whatwg.org/&lt;/p&gt;</content><summary type="html">The DOM is an Idea… Not a Thing
-When I first learned about the DOM I was confused about how it was referred to as a ‘thing’ that could be accessed (false) and as a way of representing things (true).</summary></entry><entry><title type="html">To Newbs: Recursion is Useful</title><link href="http://localhost:4000/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees.html" rel="alternate" type="text/html" title="To Newbs: Recursion is Useful" /><published>2016-07-25T00:00:00-07:00</published><updated>2016-07-25T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees</id><content type="html" xml:base="http://localhost:4000/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees.html">&lt;h1 id=&quot;recursion&quot;&gt;Recursion&lt;/h1&gt;
+When I first learned about the DOM I was confused about how it was referred to as a ‘thing’ that could be accessed (false) and as a way of representing things (true).</summary></entry><entry><title type="html">To Newbs: Recursion is Useful</title><link href="/getmichaelonboard/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees.html" rel="alternate" type="text/html" title="To Newbs: Recursion is Useful" /><published>2016-07-25T00:00:00-07:00</published><updated>2016-07-25T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/python/data-structures/algorithms/2016/07/25/recursively-traversing-binary-trees.html">&lt;h1 id=&quot;recursion&quot;&gt;Recursion&lt;/h1&gt;
 
 &lt;p&gt;I’ve often heard new programmers ask why recursion is so useful. My brother, a successful IOS developer still doesn’t see the value in recursion (at least I gather from our conversations).&lt;/p&gt;
 
@@ -1274,7 +1392,7 @@ When I first learned about the DOM I was confused about how it was referred to a
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Anything that has a basecase, or a continue-until-we-reach-the-end condition, is a great use of recursion. The solution to the base case ripples through all the callbacks on the stack until we get to the top call, which aggregates all the calls together.&lt;/p&gt;</content><summary type="html">Recursion</summary></entry><entry><title type="html">WTF Javascript!?</title><link href="http://localhost:4000/jekyll/update/javascript/2016/07/11/WTF-javascript.html" rel="alternate" type="text/html" title="WTF Javascript!?" /><published>2016-07-11T00:00:00-07:00</published><updated>2016-07-11T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/update/javascript/2016/07/11/WTF-javascript</id><content type="html" xml:base="http://localhost:4000/jekyll/update/javascript/2016/07/11/WTF-javascript.html">&lt;p&gt;This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t you just be like everyone else.&lt;/p&gt;
+&lt;p&gt;Anything that has a basecase, or a continue-until-we-reach-the-end condition, is a great use of recursion. The solution to the base case ripples through all the callbacks on the stack until we get to the top call, which aggregates all the calls together.&lt;/p&gt;</content><summary type="html">Recursion</summary></entry><entry><title type="html">WTF Javascript!?</title><link href="/getmichaelonboard/jekyll/update/javascript/2016/07/11/WTF-javascript.html" rel="alternate" type="text/html" title="WTF Javascript!?" /><published>2016-07-11T00:00:00-07:00</published><updated>2016-07-11T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/javascript/2016/07/11/WTF-javascript</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/javascript/2016/07/11/WTF-javascript.html">&lt;p&gt;This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t you just be like everyone else.&lt;/p&gt;
 
 &lt;p&gt;I feel vaguely guilty now, a little like that teacher who called young Einstein dumb. Turns out prototypal inheritance is awesome. Cue Highschool Musical and other stories of upsetting the status-quo.
 So…&lt;/p&gt;
@@ -1292,7 +1410,7 @@ So…&lt;/p&gt;
 
 &lt;p&gt;Anyway, the advantage of this tyranny (who knew there were advantages to tyranny?) is that your code is DRY. Think about the case when you have a 1,000 or a 1,000,000 instances (clones) — do you really want to duplicate shared behavior? Since we are all obsessive about computational efficiency… the answer is no.&lt;/p&gt;
 
-&lt;p&gt;So, with classes, we have a thousand clones running around shooting guns. In Javascript all the clones just tell Boba to take care of it. Finally, clones have the time to take that pottery class they’ve always wanted to…&lt;/p&gt;</content><summary type="html">This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t you just be like everyone else.</summary></entry><entry><title type="html">Do You Really Know How Functions Work in Javascript?</title><link href="http://localhost:4000/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work.html" rel="alternate" type="text/html" title="Do You Really Know How Functions Work in Javascript?" /><published>2016-07-04T00:00:00-07:00</published><updated>2016-07-04T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work</id><content type="html" xml:base="http://localhost:4000/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work.html">&lt;p&gt;A function is pretty simple, right? It’s just a reference to a block of code that get’s executed when called…&lt;/p&gt;
+&lt;p&gt;So, with classes, we have a thousand clones running around shooting guns. In Javascript all the clones just tell Boba to take care of it. Finally, clones have the time to take that pottery class they’ve always wanted to…&lt;/p&gt;</content><summary type="html">This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t you just be like everyone else.</summary></entry><entry><title type="html">Do You Really Know How Functions Work in Javascript?</title><link href="/getmichaelonboard/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work.html" rel="alternate" type="text/html" title="Do You Really Know How Functions Work in Javascript?" /><published>2016-07-04T00:00:00-07:00</published><updated>2016-07-04T00:00:00-07:00</updated><id>/getmichaelonboard/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work</id><content type="html" xml:base="/getmichaelonboard/jekyll/update/javascript/2016/07/04/do-you-really-know-how-functions-work.html">&lt;p&gt;A function is pretty simple, right? It’s just a reference to a block of code that get’s executed when called…&lt;/p&gt;
 
 &lt;p&gt;Kind of, but not quite. You see, functions also remember scope and bind to that scope when called, even when the context has changed, they can remember their local context. This is called a closure.&lt;/p&gt;
 
