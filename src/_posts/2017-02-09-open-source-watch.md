@@ -29,11 +29,49 @@ Wait, who are *we* you ask?
 We are two full stack developers... and we are looking for work! Click our beautiful faces to check out us out ;)
 
 ## Table of Contents
+0. **How it All Began**
 1. **Getting Started:** *Capacity and Cost per Request*
+  * Tracking the Top 100,000 repositories
+  * Iteration 0: 200,000 Requests Per Day
+  * The Problem of Shared State
+  * Coordination Options: DB Psuedo-Queue vs. Redis Queue
+  * Collaboration: Dispatcher Object Map
+  * Scaling Up: Performance Comparison
+  * Scaling Out: 1.2 Million Requests Per Day
 2. **Can't Work, Too Busy:** *Robust Processes and Centralized Control*
+  * More Servers, More Headaches
+  * Server Micromanagement: Working with Brittle Data
+  * Binding Daemons to our Will: Failover
+  * The Power of Daemons: Centralized Control
 3. **Growing Pains:** *System Bottlenecks & System Tuning*
+  * More Questions, More Data: Retrieving Historical Data
+  * More data, More Problems: Handling Millions of Writes Per Day
+  * Putting on Our Thinking Caps: Capacity from 1 Million to 300,000 Requests
+  * Is Postgres Being Overwhelmed?
+  * Is it Slow DB Reads?
+  * Gaining Speed: 700,000 Requests
+  * Is it Aggregate Latency (many queries over the wire)?
+  * Aggregate Latency Begone!
+  * Vrr... 900,000 Requests
+  * Behind the ORM Curtain
+  * Pushing Validations to the Database
+  * Vrr-OOM! 1,000,000 Requests
 4. **Exploring the Data:** *50 second Page Load Time!?*
+  * Putting our Thinking Caps Back On...
+  * Can we Cache the Query?
+  * Lazily Loaded Table Caching - Custom Tables?
+  * The Materialized View Impact: 250x Faster!
+  * Until We Added that N+1 Query...
+  * Impact of Database Level Caching
 5. **Making Requests Count:** *SRRPQQ for Tuning the Distribution of Repeat Jobs*
+  * Not All Repositories are Created Equal
+  * Priority Queue?
+  * Failed Priority Queue Experiment: Binary Heap
+  * Failed Priority Queue Experiments: Sorted Sets
+  * What do we Really Want?
+  * Staggered Round-Robin Prioritized Queue-of-Queues!?
+  * The Code: Enqueueing
+  * The Code: Tuning and Dequeueing
 6. **Future Work and Lessons Learned**
 
 ## How it all Began
@@ -600,7 +638,7 @@ Disclaimer: materialized views are only useful for static SQL queries that can b
 
 The impact of using materialized views is huge...
 
-#### Queries are 5,000 times faster!
+#### Queries are 2,50 times faster!
 
 That is almost as fast as the round trip to our server and back! Awesome!
 
@@ -638,7 +676,7 @@ Now when the server-side rendering looks like this at the database level:
 
 No more N+1!
 
-### Impact of Server-Side Rendering Performance Tuning
+### Impact of Database Level Caching
 
 After all of this, it helped us achieve the following:
 
@@ -899,7 +937,7 @@ If you followed along to the bottom, thank you!
 - - -
 <div>
   <a href="http://www.numbluk.com/credentials"><img class="gravitar" src="https://www.gravatar.com/avatar/fd080461b35c3dcb5911e38d5f58c5af"/></a>
-  
+
   <a href="http://getmichaelonboard.com/"><img class="gravitar" src="https://secure.gravatar.com/avatar/6ec313ee09eeb69eddd3789f98a3d2b2"/></a>
 </div>
 
