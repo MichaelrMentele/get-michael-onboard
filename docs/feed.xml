@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-12T16:25:47-08:00</updated><id>http://localhost:4000//</id><title type="html">Get Michael Onboard</title><subtitle>This is the technical site and blog of software engineer Michael Mentele.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-13T08:00:51-08:00</updated><id>http://localhost:4000//</id><title type="html">Get Michael Onboard</title><subtitle>This is the technical site and blog of software engineer Michael Mentele.
 </subtitle><entry><title type="html">How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web</title><link href="http://localhost:4000/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch.html" rel="alternate" type="text/html" title="How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web" /><published>2017-02-09T00:00:00-08:00</published><updated>2017-02-09T00:00:00-08:00</updated><id>http://localhost:4000/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch</id><content type="html" xml:base="http://localhost:4000/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch.html">&lt;p&gt;&lt;a href=&quot;http://www.opensourcewatch.io&quot;&gt;
   &lt;img style=&quot;max-width: 30%;&quot; src=&quot;/assets/osw-logo.png&quot; alt=&quot;opensourcewatch logo&quot; id=&quot;osw_logo&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
@@ -27,11 +27,64 @@
 
 &lt;h2 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h2&gt;
 &lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Getting Started:&lt;/strong&gt; &lt;em&gt;Capacity and Cost per Request&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Can’t Work, Too Busy:&lt;/strong&gt; &lt;em&gt;Robust Processes and Centralized Control&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Growing Pains:&lt;/strong&gt; &lt;em&gt;System Bottlenecks &amp;amp; System Tuning&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Exploring the Data:&lt;/strong&gt; &lt;em&gt;50 second Page Load Time!?&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Making Requests Count:&lt;/strong&gt; &lt;em&gt;SRRPQQ for Tuning the Distribution of Repeat Jobs&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;How it All Began&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Getting Started:&lt;/strong&gt; &lt;em&gt;Capacity and Cost per Request&lt;/em&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Tracking the Top 100,000 repositories&lt;/li&gt;
+      &lt;li&gt;Iteration 0: 200,000 Requests Per Day&lt;/li&gt;
+      &lt;li&gt;The Problem of Shared State&lt;/li&gt;
+      &lt;li&gt;Coordination Options: DB Psuedo-Queue vs. Redis Queue&lt;/li&gt;
+      &lt;li&gt;Collaboration: Dispatcher Object Map&lt;/li&gt;
+      &lt;li&gt;Scaling Up: Performance Comparison&lt;/li&gt;
+      &lt;li&gt;Scaling Out: 1.2 Million Requests Per Day&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Can’t Work, Too Busy:&lt;/strong&gt; &lt;em&gt;Robust Processes and Centralized Control&lt;/em&gt;
+    &lt;ul&gt;
+      &lt;li&gt;More Servers, More Headaches&lt;/li&gt;
+      &lt;li&gt;Server Micromanagement: Working with Brittle Data&lt;/li&gt;
+      &lt;li&gt;Binding Daemons to our Will: Failover&lt;/li&gt;
+      &lt;li&gt;The Power of Daemons: Centralized Control&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Growing Pains:&lt;/strong&gt; &lt;em&gt;System Bottlenecks &amp;amp; System Tuning&lt;/em&gt;
+    &lt;ul&gt;
+      &lt;li&gt;More Questions, More Data: Retrieving Historical Data&lt;/li&gt;
+      &lt;li&gt;More data, More Problems: Handling Millions of Writes Per Day&lt;/li&gt;
+      &lt;li&gt;Putting on Our Thinking Caps: Capacity from 1 Million to 300,000 Requests&lt;/li&gt;
+      &lt;li&gt;Is Postgres Being Overwhelmed?&lt;/li&gt;
+      &lt;li&gt;Is it Slow DB Reads?&lt;/li&gt;
+      &lt;li&gt;Gaining Speed: 700,000 Requests&lt;/li&gt;
+      &lt;li&gt;Is it Aggregate Latency (many queries over the wire)?&lt;/li&gt;
+      &lt;li&gt;Aggregate Latency Begone!&lt;/li&gt;
+      &lt;li&gt;Vrr… 900,000 Requests&lt;/li&gt;
+      &lt;li&gt;Behind the ORM Curtain&lt;/li&gt;
+      &lt;li&gt;Pushing Validations to the Database&lt;/li&gt;
+      &lt;li&gt;Vrr-OOM! 1,000,000 Requests&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Exploring the Data:&lt;/strong&gt; &lt;em&gt;50 second Page Load Time!?&lt;/em&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Putting our Thinking Caps Back On…&lt;/li&gt;
+      &lt;li&gt;Can we Cache the Query?&lt;/li&gt;
+      &lt;li&gt;Lazily Loaded Table Caching - Custom Tables?&lt;/li&gt;
+      &lt;li&gt;The Materialized View Impact: 250x Faster!&lt;/li&gt;
+      &lt;li&gt;Until We Added that N+1 Query…&lt;/li&gt;
+      &lt;li&gt;Impact of Database Level Caching&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Making Requests Count:&lt;/strong&gt; &lt;em&gt;SRRPQQ for Tuning the Distribution of Repeat Jobs&lt;/em&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Not All Repositories are Created Equal&lt;/li&gt;
+      &lt;li&gt;Priority Queue?&lt;/li&gt;
+      &lt;li&gt;Failed Priority Queue Experiment: Binary Heap&lt;/li&gt;
+      &lt;li&gt;Failed Priority Queue Experiments: Sorted Sets&lt;/li&gt;
+      &lt;li&gt;What do we Really Want?&lt;/li&gt;
+      &lt;li&gt;Staggered Round-Robin Prioritized Queue-of-Queues!?&lt;/li&gt;
+      &lt;li&gt;The Code: Enqueueing&lt;/li&gt;
+      &lt;li&gt;The Code: Tuning and Dequeueing&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Future Work and Lessons Learned&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -617,7 +670,7 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The impact of using materialized views is huge…&lt;/p&gt;
 
-&lt;h4 id=&quot;queries-are-5000-times-faster&quot;&gt;Queries are 5,000 times faster!&lt;/h4&gt;
+&lt;h4 id=&quot;queries-are-250-times-faster&quot;&gt;Queries are 2,50 times faster!&lt;/h4&gt;
 
 &lt;p&gt;That is almost as fast as the round trip to our server and back! Awesome!&lt;/p&gt;
 
@@ -655,7 +708,7 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;No more N+1!&lt;/p&gt;
 
-&lt;h3 id=&quot;impact-of-server-side-rendering-performance-tuning&quot;&gt;Impact of Server-Side Rendering Performance Tuning&lt;/h3&gt;
+&lt;h3 id=&quot;impact-of-database-level-caching&quot;&gt;Impact of Database Level Caching&lt;/h3&gt;
 
 &lt;p&gt;After all of this, it helped us achieve the following:&lt;/p&gt;
 
@@ -927,7 +980,7 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;div&gt;
   &lt;a href=&quot;http://www.numbluk.com/credentials&quot;&gt;&lt;img class=&quot;gravitar&quot; src=&quot;https://www.gravatar.com/avatar/fd080461b35c3dcb5911e38d5f58c5af&quot; /&gt;&lt;/a&gt;
-  
+
   &lt;a href=&quot;http://getmichaelonboard.com/&quot;&gt;&lt;img class=&quot;gravitar&quot; src=&quot;https://secure.gravatar.com/avatar/6ec313ee09eeb69eddd3789f98a3d2b2&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 

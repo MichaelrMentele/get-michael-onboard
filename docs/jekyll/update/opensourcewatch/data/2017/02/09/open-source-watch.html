@@ -98,11 +98,64 @@
 
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
-  <li><strong>Getting Started:</strong> <em>Capacity and Cost per Request</em></li>
-  <li><strong>Can’t Work, Too Busy:</strong> <em>Robust Processes and Centralized Control</em></li>
-  <li><strong>Growing Pains:</strong> <em>System Bottlenecks &amp; System Tuning</em></li>
-  <li><strong>Exploring the Data:</strong> <em>50 second Page Load Time!?</em></li>
-  <li><strong>Making Requests Count:</strong> <em>SRRPQQ for Tuning the Distribution of Repeat Jobs</em></li>
+  <li><strong>How it All Began</strong></li>
+  <li><strong>Getting Started:</strong> <em>Capacity and Cost per Request</em>
+    <ul>
+      <li>Tracking the Top 100,000 repositories</li>
+      <li>Iteration 0: 200,000 Requests Per Day</li>
+      <li>The Problem of Shared State</li>
+      <li>Coordination Options: DB Psuedo-Queue vs. Redis Queue</li>
+      <li>Collaboration: Dispatcher Object Map</li>
+      <li>Scaling Up: Performance Comparison</li>
+      <li>Scaling Out: 1.2 Million Requests Per Day</li>
+    </ul>
+  </li>
+  <li><strong>Can’t Work, Too Busy:</strong> <em>Robust Processes and Centralized Control</em>
+    <ul>
+      <li>More Servers, More Headaches</li>
+      <li>Server Micromanagement: Working with Brittle Data</li>
+      <li>Binding Daemons to our Will: Failover</li>
+      <li>The Power of Daemons: Centralized Control</li>
+    </ul>
+  </li>
+  <li><strong>Growing Pains:</strong> <em>System Bottlenecks &amp; System Tuning</em>
+    <ul>
+      <li>More Questions, More Data: Retrieving Historical Data</li>
+      <li>More data, More Problems: Handling Millions of Writes Per Day</li>
+      <li>Putting on Our Thinking Caps: Capacity from 1 Million to 300,000 Requests</li>
+      <li>Is Postgres Being Overwhelmed?</li>
+      <li>Is it Slow DB Reads?</li>
+      <li>Gaining Speed: 700,000 Requests</li>
+      <li>Is it Aggregate Latency (many queries over the wire)?</li>
+      <li>Aggregate Latency Begone!</li>
+      <li>Vrr… 900,000 Requests</li>
+      <li>Behind the ORM Curtain</li>
+      <li>Pushing Validations to the Database</li>
+      <li>Vrr-OOM! 1,000,000 Requests</li>
+    </ul>
+  </li>
+  <li><strong>Exploring the Data:</strong> <em>50 second Page Load Time!?</em>
+    <ul>
+      <li>Putting our Thinking Caps Back On…</li>
+      <li>Can we Cache the Query?</li>
+      <li>Lazily Loaded Table Caching - Custom Tables?</li>
+      <li>The Materialized View Impact: 250x Faster!</li>
+      <li>Until We Added that N+1 Query…</li>
+      <li>Impact of Database Level Caching</li>
+    </ul>
+  </li>
+  <li><strong>Making Requests Count:</strong> <em>SRRPQQ for Tuning the Distribution of Repeat Jobs</em>
+    <ul>
+      <li>Not All Repositories are Created Equal</li>
+      <li>Priority Queue?</li>
+      <li>Failed Priority Queue Experiment: Binary Heap</li>
+      <li>Failed Priority Queue Experiments: Sorted Sets</li>
+      <li>What do we Really Want?</li>
+      <li>Staggered Round-Robin Prioritized Queue-of-Queues!?</li>
+      <li>The Code: Enqueueing</li>
+      <li>The Code: Tuning and Dequeueing</li>
+    </ul>
+  </li>
   <li><strong>Future Work and Lessons Learned</strong></li>
 </ol>
 
@@ -688,7 +741,7 @@ Capacity Needed: 1 Million Requests Per Day <br /></p>
 
 <p>The impact of using materialized views is huge…</p>
 
-<h4 id="queries-are-5000-times-faster">Queries are 5,000 times faster!</h4>
+<h4 id="queries-are-250-times-faster">Queries are 2,50 times faster!</h4>
 
 <p>That is almost as fast as the round trip to our server and back! Awesome!</p>
 
@@ -726,7 +779,7 @@ Capacity Needed: 1 Million Requests Per Day <br /></p>
 
 <p>No more N+1!</p>
 
-<h3 id="impact-of-server-side-rendering-performance-tuning">Impact of Server-Side Rendering Performance Tuning</h3>
+<h3 id="impact-of-database-level-caching">Impact of Database Level Caching</h3>
 
 <p>After all of this, it helped us achieve the following:</p>
 
@@ -998,7 +1051,7 @@ Capacity Needed: 1 Million Requests Per Day <br /></p>
 <hr />
 <div>
   <a href="http://www.numbluk.com/credentials"><img class="gravitar" src="https://www.gravatar.com/avatar/fd080461b35c3dcb5911e38d5f58c5af" /></a>
-  
+
   <a href="http://getmichaelonboard.com/"><img class="gravitar" src="https://secure.gravatar.com/avatar/6ec313ee09eeb69eddd3789f98a3d2b2" /></a>
 </div>
 
