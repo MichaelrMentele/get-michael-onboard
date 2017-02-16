@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-13T08:00:51-08:00</updated><id>http://localhost:4000//</id><title type="html">Get Michael Onboard</title><subtitle>This is the technical site and blog of software engineer Michael Mentele.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-13T16:21:08-08:00</updated><id>http://localhost:4000//</id><title type="html">Get Michael Onboard</title><subtitle>This is the technical site and blog of software engineer Michael Mentele.
 </subtitle><entry><title type="html">How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web</title><link href="http://localhost:4000/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch.html" rel="alternate" type="text/html" title="How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web" /><published>2017-02-09T00:00:00-08:00</published><updated>2017-02-09T00:00:00-08:00</updated><id>http://localhost:4000/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch</id><content type="html" xml:base="http://localhost:4000/jekyll/update/opensourcewatch/data/2017/02/09/open-source-watch.html">&lt;p&gt;&lt;a href=&quot;http://www.opensourcewatch.io&quot;&gt;
   &lt;img style=&quot;max-width: 30%;&quot; src=&quot;/assets/osw-logo.png&quot; alt=&quot;opensourcewatch logo&quot; id=&quot;osw_logo&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
@@ -23,7 +23,11 @@
   &lt;/a&gt;
 &lt;/div&gt;
 
-&lt;p&gt;We are two full stack developers… and we are looking for work! Click our beautiful faces to check out us out ;)&lt;/p&gt;
+&lt;p&gt;We are two full stack developers. Click our beautiful faces to check out us out ;)&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Psst&lt;/strong&gt; By the way, if you are hiring (or know someone who is), Michael is currently looking for a fullstack position.&lt;/p&gt;
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h2&gt;
 &lt;ol&gt;
@@ -131,13 +135,7 @@
 
 &lt;p&gt;One process can achieve 8,500 requests on our Digital Ocean server. We did some extrapolation and estimated it would take 36 hours to scrape all 100,000 repositories one time through (with an average of 2.8 requests needed per repository)!&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Capacity: 200,000 Requests Per Day &lt;br /&gt;
-Time Through Repositories: 36 Hours &lt;br /&gt;
-Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;
-Processes: 1 &lt;br /&gt;
-Servers: 1 &lt;br /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/acq_status_01.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is 4.5x slower than our target. So, what to do? Scale up! More scrapers means more capacity and with 6 processes we can get within the 8 hour window.&lt;/p&gt;
 
@@ -205,24 +203,13 @@ Servers: 1 &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;We spin up a second process on our server…&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Capacity: 400,000 Requests Per Day&lt;br /&gt;
-Time Through Repositories: 18 Hours&lt;br /&gt;
-Capacity Needed: 1 Million Requests Per Day&lt;br /&gt;
-Processes: 2&lt;br /&gt;
-Servers: 1&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/acq_status_02.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;scaling-out&quot;&gt;Scaling Out&lt;/h3&gt;
 
 &lt;p&gt;We are doing a decent job of maximizing our machines so we spun up two more servers with two processes each.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Capacity: 1,200,000 Requests Per Day&lt;br /&gt;
-Time Through Repositories: &lt;strong&gt;6 Hours&lt;/strong&gt;&lt;br /&gt;
-Processes: 6 &lt;br /&gt;
-Servers: 3&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/acq_status_03.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now, four times a day (every 6 hours) we scrape the top 100,000 repositories on Github using 3 servers (represented by the dispatcher objects) which are coordinated by a Redis queue. This is well within our 8 hour window!&lt;/p&gt;
 
@@ -323,13 +310,7 @@ Servers: 3&lt;/p&gt;
 
 &lt;p&gt;Only scraping daily data brought in around 25,000 new records a day, but we were now getting hundreds of thousands to millions of records a day. Our request capacity quickly plummeted to 30% of what we expected.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Capacity: ~300,000 Requests Per Day &lt;br /&gt;
-Time Through Repositories: 24 Hours
-Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;
-Processes: 6 &lt;br /&gt;
-Servers: 3 &lt;br /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/downshift_01.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We’ve been downshifted…&lt;/p&gt;
 
@@ -419,11 +400,7 @@ Servers: 3 &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;After, it does a heap scan which significantly impacted the lookup time; a 2700X difference. From then on we knew to keep a close eye on other similar situations.&lt;/p&gt;
 
 &lt;h3 id=&quot;gaining-speed&quot;&gt;Gaining Speed…&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Capacity: ~700,000 Requests Per Day &lt;br /&gt;
-Time Through Repositories: 12 Hours &lt;br /&gt;
-Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/downshift_02.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/27_gaining_speed.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -496,11 +473,7 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;vrrrr&quot;&gt;Vrrrr…&lt;/h3&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Capacity: ~900,000 Requests Per Day &lt;br /&gt;
-Time Through Repositories: 8 Hours &lt;br /&gt;
-Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/downshift_03.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/30_vrrr.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -539,11 +512,7 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;vrr-oom&quot;&gt;Vrr-OOM!&lt;/h3&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Capacity: ~1,000,000 Requests Per Day &lt;br /&gt;
-Time Through Repositories: ~7 Hours &lt;br /&gt;
-Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/downshift_04.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/34_vrroooom.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -555,9 +524,9 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/35_explore_data.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Initially, it took about a minute to load. That is about as fast as this stone turtle:&lt;/p&gt;
+&lt;p&gt;Initially, it took about a minute to load.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/36_stone_turtle.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/render_status_01.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;No one wants to see OSW that bad!&lt;/p&gt;
 
@@ -670,9 +639,11 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;The impact of using materialized views is huge…&lt;/p&gt;
 
-&lt;h4 id=&quot;queries-are-250-times-faster&quot;&gt;Queries are 2,50 times faster!&lt;/h4&gt;
+&lt;h4 id=&quot;queries-are-250-times-faster&quot;&gt;Queries are 250 times faster!&lt;/h4&gt;
 
 &lt;p&gt;That is almost as fast as the round trip to our server and back! Awesome!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/render_status_02.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;until-we-added-that-n1-query&quot;&gt;Until We Added that N+1 Query…&lt;/h3&gt;
 
@@ -707,6 +678,8 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/41_n_plus_one_after.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;No more N+1!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2017-02-09-open-source-watch/render_sts_03.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;impact-of-database-level-caching&quot;&gt;Impact of Database Level Caching&lt;/h3&gt;
 
@@ -984,8 +957,10 @@ Capacity Needed: 1 Million Requests Per Day &lt;br /&gt;&lt;/p&gt;
   &lt;a href=&quot;http://getmichaelonboard.com/&quot;&gt;&lt;img class=&quot;gravitar&quot; src=&quot;https://secure.gravatar.com/avatar/6ec313ee09eeb69eddd3789f98a3d2b2&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;
 
-&lt;p&gt;We are two full stack developers… and we are looking for work! Click our beautiful faces to check out our websites.&lt;/p&gt;
-
+&lt;p&gt;We are two full stack developers… Click our beautiful faces to check out our websites.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Psst&lt;/strong&gt; By the way, if you are hiring (or know someone who is), &lt;a href=&quot;http://getmichaelonboard.com&quot;&gt;Michael&lt;/a&gt; is currently looking for a fullstack position.&lt;/p&gt;
+&lt;hr /&gt;
 &lt;h4 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h4&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;

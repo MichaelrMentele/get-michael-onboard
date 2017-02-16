@@ -26,7 +26,11 @@ Wait, who are *we* you ask?
   </a>
 </div>
 
-We are two full stack developers... and we are looking for work! Click our beautiful faces to check out us out ;)
+We are two full stack developers. Click our beautiful faces to check out us out ;)
+
+- - -
+**Psst** By the way, if you are hiring (or know someone who is), Michael is currently looking for a fullstack position.  
+- - -
 
 ## Table of Contents
 0. **How it All Began**
@@ -116,12 +120,7 @@ Luckily, scraping the top Repositories was a one-time job. We stored the data in
 
 One process can achieve 8,500 requests on our Digital Ocean server. We did some extrapolation and estimated it would take 36 hours to scrape all 100,000 repositories one time through (with an average of 2.8 requests needed per repository)!
 
-> Capacity: 200,000 Requests Per Day <br>
-> Time Through Repositories: 36 Hours <br>
-> Capacity Needed: 1 Million Requests Per Day <br>
-> Processes: 1 <br>
-> Servers: 1 <br>
-
+![](/assets/posts/2017-02-09-open-source-watch/acq_status_01.png)
 
 This is 4.5x slower than our target. So, what to do? Scale up! More scrapers means more capacity and with 6 processes we can get within the 8 hour window.
 
@@ -190,20 +189,13 @@ Our processes are memory hogs, but it doesn't matter as more than two processes 
 
 We spin up a second process on our server...
 
-> Capacity: 400,000 Requests Per Day  
-> Time Through Repositories: 18 Hours  
-> Capacity Needed: 1 Million Requests Per Day  
-> Processes: 2  
-> Servers: 1  
+![](/assets/posts/2017-02-09-open-source-watch/acq_status_02.png)
 
 ### Scaling Out
 
 We are doing a decent job of maximizing our machines so we spun up two more servers with two processes each.
 
-> Capacity: 1,200,000 Requests Per Day  
-> Time Through Repositories: **6 Hours**  
-> Processes: 6   
-> Servers: 3   
+![](/assets/posts/2017-02-09-open-source-watch/acq_status_03.png)
 
 Now, four times a day (every 6 hours) we scrape the top 100,000 repositories on Github using 3 servers (represented by the dispatcher objects) which are coordinated by a Redis queue. This is well within our 8 hour window!
 
@@ -304,11 +296,7 @@ We tweaked our scrapers to grab historical data related over the past 90 days. A
 
 Only scraping daily data brought in around 25,000 new records a day, but we were now getting hundreds of thousands to millions of records a day. Our request capacity quickly plummeted to 30% of what we expected.
 
-> Capacity: ~300,000 Requests Per Day <br>
-> Time Through Repositories: 24 Hours
-> Capacity Needed: 1 Million Requests Per Day <br>
-> Processes: 6 <br>
-> Servers: 3 <br>
+![](/assets/posts/2017-02-09-open-source-watch/downshift_01.png)
 
 We've been downshifted...
 
@@ -398,9 +386,7 @@ Before, it took a whopping 341 ms just to look up an issue in the table with a s
 After, it does a heap scan which significantly impacted the lookup time; a 2700X difference. From then on we knew to keep a close eye on other similar situations.
 
 ### Gaining Speed...
-> Capacity: ~700,000 Requests Per Day <br>
-> Time Through Repositories: 12 Hours <br>
-> Capacity Needed: 1 Million Requests Per Day <br>
+![](/assets/posts/2017-02-09-open-source-watch/downshift_02.png)
 
 ![](/assets/posts/2017-02-09-open-source-watch/27_gaining_speed.png)
 
@@ -473,9 +459,7 @@ This is just a visualization. The latency between the scraper server and databas
 
 ### Vrrrr...
 
-> Capacity: ~900,000 Requests Per Day <br>
-> Time Through Repositories: 8 Hours <br>
-> Capacity Needed: 1 Million Requests Per Day <br>
+![](/assets/posts/2017-02-09-open-source-watch/downshift_03.png)
 
 ![](/assets/posts/2017-02-09-open-source-watch/30_vrrr.png)
 
@@ -514,9 +498,7 @@ As you can see, no more extra queries! We have successfully reduced the number o
 
 ### Vrr-OOM!
 
-> Capacity: ~1,000,000 Requests Per Day <br>
-> Time Through Repositories: ~7 Hours <br>
-> Capacity Needed: 1 Million Requests Per Day <br>
+![](/assets/posts/2017-02-09-open-source-watch/downshift_04.png)
 
 ![](/assets/posts/2017-02-09-open-source-watch/34_vrroooom.png)
 
@@ -528,9 +510,9 @@ After all of that hard work, how about we take a look at some of the data we've 
 
 ![](/assets/posts/2017-02-09-open-source-watch/35_explore_data.png)
 
-Initially, it took about a minute to load. That is about as fast as this stone turtle:
+Initially, it took about a minute to load.
 
-![](/assets/posts/2017-02-09-open-source-watch/36_stone_turtle.jpg)
+![](/assets/posts/2017-02-09-open-source-watch/render_status_01.png)
 
 No one wants to see OSW that bad!
 
@@ -638,9 +620,11 @@ Disclaimer: materialized views are only useful for static SQL queries that can b
 
 The impact of using materialized views is huge...
 
-#### Queries are 2,50 times faster!
+#### Queries are 250 times faster!
 
 That is almost as fast as the round trip to our server and back! Awesome!
+
+![](/assets/posts/2017-02-09-open-source-watch/render_status_02.png)
 
 ### Until We Added that N+1 Query...
 
@@ -675,6 +659,8 @@ Now when the server-side rendering looks like this at the database level:
 ![](/assets/posts/2017-02-09-open-source-watch/41_n_plus_one_after.png)
 
 No more N+1!
+
+![](/assets/posts/2017-02-09-open-source-watch/render_sts_03.png)
 
 ### Impact of Database Level Caching
 
@@ -941,7 +927,9 @@ If you followed along to the bottom, thank you!
   <a href="http://getmichaelonboard.com/"><img class="gravitar" src="https://secure.gravatar.com/avatar/6ec313ee09eeb69eddd3789f98a3d2b2"/></a>
 </div>
 
-We are two full stack developers... and we are looking for work! Click our beautiful faces to check out our websites.
-
+We are two full stack developers... Click our beautiful faces to check out our websites.
+- - -
+**Psst** By the way, if you are hiring (or know someone who is), [Michael](http://getmichaelonboard.com) is currently looking for a fullstack position. 
+- - -
 #### Footnotes
 [^1]: Check [here](http://www.brianstorti.com/implementing-a-priority-queue-in-ruby/) for more on Binary Heaps.

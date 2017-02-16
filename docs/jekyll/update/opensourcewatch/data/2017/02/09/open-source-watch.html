@@ -94,7 +94,11 @@
   </a>
 </div>
 
-<p>We are two full stack developers… and we are looking for work! Click our beautiful faces to check out us out ;)</p>
+<p>We are two full stack developers. Click our beautiful faces to check out us out ;)</p>
+
+<hr />
+<p><strong>Psst</strong> By the way, if you are hiring (or know someone who is), Michael is currently looking for a fullstack position.</p>
+<hr />
 
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
@@ -202,13 +206,7 @@
 
 <p>One process can achieve 8,500 requests on our Digital Ocean server. We did some extrapolation and estimated it would take 36 hours to scrape all 100,000 repositories one time through (with an average of 2.8 requests needed per repository)!</p>
 
-<blockquote>
-  <p>Capacity: 200,000 Requests Per Day <br />
-Time Through Repositories: 36 Hours <br />
-Capacity Needed: 1 Million Requests Per Day <br />
-Processes: 1 <br />
-Servers: 1 <br /></p>
-</blockquote>
+<p><img src="/assets/posts/2017-02-09-open-source-watch/acq_status_01.png" alt="" /></p>
 
 <p>This is 4.5x slower than our target. So, what to do? Scale up! More scrapers means more capacity and with 6 processes we can get within the 8 hour window.</p>
 
@@ -276,24 +274,13 @@ Servers: 1 <br /></p>
 
 <p>We spin up a second process on our server…</p>
 
-<blockquote>
-  <p>Capacity: 400,000 Requests Per Day<br />
-Time Through Repositories: 18 Hours<br />
-Capacity Needed: 1 Million Requests Per Day<br />
-Processes: 2<br />
-Servers: 1</p>
-</blockquote>
+<p><img src="/assets/posts/2017-02-09-open-source-watch/acq_status_02.png" alt="" /></p>
 
 <h3 id="scaling-out">Scaling Out</h3>
 
 <p>We are doing a decent job of maximizing our machines so we spun up two more servers with two processes each.</p>
 
-<blockquote>
-  <p>Capacity: 1,200,000 Requests Per Day<br />
-Time Through Repositories: <strong>6 Hours</strong><br />
-Processes: 6 <br />
-Servers: 3</p>
-</blockquote>
+<p><img src="/assets/posts/2017-02-09-open-source-watch/acq_status_03.png" alt="" /></p>
 
 <p>Now, four times a day (every 6 hours) we scrape the top 100,000 repositories on Github using 3 servers (represented by the dispatcher objects) which are coordinated by a Redis queue. This is well within our 8 hour window!</p>
 
@@ -394,13 +381,7 @@ Servers: 3</p>
 
 <p>Only scraping daily data brought in around 25,000 new records a day, but we were now getting hundreds of thousands to millions of records a day. Our request capacity quickly plummeted to 30% of what we expected.</p>
 
-<blockquote>
-  <p>Capacity: ~300,000 Requests Per Day <br />
-Time Through Repositories: 24 Hours
-Capacity Needed: 1 Million Requests Per Day <br />
-Processes: 6 <br />
-Servers: 3 <br /></p>
-</blockquote>
+<p><img src="/assets/posts/2017-02-09-open-source-watch/downshift_01.png" alt="" /></p>
 
 <p>We’ve been downshifted…</p>
 
@@ -490,11 +471,7 @@ Servers: 3 <br /></p>
 <p>After, it does a heap scan which significantly impacted the lookup time; a 2700X difference. From then on we knew to keep a close eye on other similar situations.</p>
 
 <h3 id="gaining-speed">Gaining Speed…</h3>
-<blockquote>
-  <p>Capacity: ~700,000 Requests Per Day <br />
-Time Through Repositories: 12 Hours <br />
-Capacity Needed: 1 Million Requests Per Day <br /></p>
-</blockquote>
+<p><img src="/assets/posts/2017-02-09-open-source-watch/downshift_02.png" alt="" /></p>
 
 <p><img src="/assets/posts/2017-02-09-open-source-watch/27_gaining_speed.png" alt="" /></p>
 
@@ -567,11 +544,7 @@ Capacity Needed: 1 Million Requests Per Day <br /></p>
 
 <h3 id="vrrrr">Vrrrr…</h3>
 
-<blockquote>
-  <p>Capacity: ~900,000 Requests Per Day <br />
-Time Through Repositories: 8 Hours <br />
-Capacity Needed: 1 Million Requests Per Day <br /></p>
-</blockquote>
+<p><img src="/assets/posts/2017-02-09-open-source-watch/downshift_03.png" alt="" /></p>
 
 <p><img src="/assets/posts/2017-02-09-open-source-watch/30_vrrr.png" alt="" /></p>
 
@@ -610,11 +583,7 @@ Capacity Needed: 1 Million Requests Per Day <br /></p>
 
 <h3 id="vrr-oom">Vrr-OOM!</h3>
 
-<blockquote>
-  <p>Capacity: ~1,000,000 Requests Per Day <br />
-Time Through Repositories: ~7 Hours <br />
-Capacity Needed: 1 Million Requests Per Day <br /></p>
-</blockquote>
+<p><img src="/assets/posts/2017-02-09-open-source-watch/downshift_04.png" alt="" /></p>
 
 <p><img src="/assets/posts/2017-02-09-open-source-watch/34_vrroooom.png" alt="" /></p>
 
@@ -626,9 +595,9 @@ Capacity Needed: 1 Million Requests Per Day <br /></p>
 
 <p><img src="/assets/posts/2017-02-09-open-source-watch/35_explore_data.png" alt="" /></p>
 
-<p>Initially, it took about a minute to load. That is about as fast as this stone turtle:</p>
+<p>Initially, it took about a minute to load.</p>
 
-<p><img src="/assets/posts/2017-02-09-open-source-watch/36_stone_turtle.jpg" alt="" /></p>
+<p><img src="/assets/posts/2017-02-09-open-source-watch/render_status_01.png" alt="" /></p>
 
 <p>No one wants to see OSW that bad!</p>
 
@@ -741,9 +710,11 @@ Capacity Needed: 1 Million Requests Per Day <br /></p>
 
 <p>The impact of using materialized views is huge…</p>
 
-<h4 id="queries-are-250-times-faster">Queries are 2,50 times faster!</h4>
+<h4 id="queries-are-250-times-faster">Queries are 250 times faster!</h4>
 
 <p>That is almost as fast as the round trip to our server and back! Awesome!</p>
+
+<p><img src="/assets/posts/2017-02-09-open-source-watch/render_status_02.png" alt="" /></p>
 
 <h3 id="until-we-added-that-n1-query">Until We Added that N+1 Query…</h3>
 
@@ -778,6 +749,8 @@ Capacity Needed: 1 Million Requests Per Day <br /></p>
 <p><img src="/assets/posts/2017-02-09-open-source-watch/41_n_plus_one_after.png" alt="" /></p>
 
 <p>No more N+1!</p>
+
+<p><img src="/assets/posts/2017-02-09-open-source-watch/render_sts_03.png" alt="" /></p>
 
 <h3 id="impact-of-database-level-caching">Impact of Database Level Caching</h3>
 
@@ -1055,8 +1028,10 @@ Capacity Needed: 1 Million Requests Per Day <br /></p>
   <a href="http://getmichaelonboard.com/"><img class="gravitar" src="https://secure.gravatar.com/avatar/6ec313ee09eeb69eddd3789f98a3d2b2" /></a>
 </div>
 
-<p>We are two full stack developers… and we are looking for work! Click our beautiful faces to check out our websites.</p>
-
+<p>We are two full stack developers… Click our beautiful faces to check out our websites.</p>
+<hr />
+<p><strong>Psst</strong> By the way, if you are hiring (or know someone who is), <a href="http://getmichaelonboard.com">Michael</a> is currently looking for a fullstack position.</p>
+<hr />
 <h4 id="footnotes">Footnotes</h4>
 <div class="footnotes">
   <ol>
