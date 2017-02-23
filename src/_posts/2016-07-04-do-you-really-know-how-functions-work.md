@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Do You Really Know How Functions Work in Javascript?"
-categories: jekyll update javascript
+categories: javascript
 ---
 
 A function is pretty simple, right? It's just a reference to a block of code that get's executed when called...

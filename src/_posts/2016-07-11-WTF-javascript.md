@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "WTF Javascript!?"
-categories: jekyll update javascript 
+categories: javascript 
 ---
 
 This was my initial reaction when introduced to prototypal inheritance. I was like, jeez, do you have to make it so awkward to instantiate objects? Why can’t you just be like everyone else.

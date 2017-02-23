@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How We Became the Most Up-To-Date Monitor of Open-Source Github Projects on the Web"
-categories: jekyll update opensourcewatch data
+categories: opensourcewatch data-engineering backend-systems
 ---
 
 <a href="http://www.opensourcewatch.io">
@@ -929,7 +929,7 @@ If you followed along to the bottom, thank you!
 
 We are two full stack developers... Click our beautiful faces to check out our websites.
 - - -
-**Psst** By the way, if you are hiring (or know someone who is), [Michael](http://getmichaelonboard.com) is currently looking for a fullstack position. 
+**Psst** By the way, if you are hiring (or know someone who is), [Michael](http://getmichaelonboard.com) is currently looking for a fullstack position.
 - - -
 #### Footnotes
 [^1]: Check [here](http://www.brianstorti.com/implementing-a-priority-queue-in-ruby/) for more on Binary Heaps.
