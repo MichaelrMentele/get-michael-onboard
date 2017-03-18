@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>How to Scale a Web Application</title>
+  <meta name="description" content="Often, Rails developers, especially new ones don’t have a great mental model of their overall system beyond their code. This was something I’ve been wanting ...">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/backend-systems/2017/03/17/scaling-a-web-app.html">
+  <link rel="alternate" type="application/rss+xml" title="Get Michael Onboard" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Get Michael Onboard</a>
+
+    <nav class="site-nav">
+      <span class="menu-icon">
+        <svg viewBox="0 0 18 15" width="18px" height="15px">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </span>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/blog.html">Blog</a>
+          
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/resume.html">Resume</a>
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">How to Scale a Web Application</h1>
+    <p class="post-meta"><time datetime="2017-03-17T00:00:00-07:00" itemprop="datePublished">Mar 17, 2017</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Often, Rails developers, especially new ones don’t have a great mental model of their overall system beyond their code. This was something I’ve been wanting to write about and then I was asked the below interview question and it is the perfect opportunity.</p>
+
+<h2 id="hypothetical-situation">Hypothetical Situation</h2>
+<p>Our team is being tasked with generating an API that supplies geospatial airport data to an iOS application that helps users map and geographically compare airports around the world.</p>
+
+<p>Assume that the application is “readheavy”, and does not need to often update the stored airport data(as airports are not often added) . The API will need to serve an average of 500requests/second, but the usage could fluctuate ~300requests/second, depending on the time of day</p>
+
+<p>Provide a detailed description of the full stack that you would choose to build this API, complete with descriptive strategies for the following:</p>
+<ul>
+  <li>Hosting</li>
+  <li>Language</li>
+  <li>Framework (if applicable)</li>
+  <li>Storage</li>
+  <li>Performance</li>
+  <li>Misc (anything notcoveredabove)</li>
+</ul>
+
+<h1 id="my-answer">My Answer</h1>
+
+<p>To begin with, we need to be clear on our requirements. The system needs to be overbuilt for peak load with some level of margin. So, with an expected peak QPS of 800 I would expect my system to handle at least +25% or <strong>1000 requests per second.</strong></p>
+
+<p>Let’s assume we start with a database server, with a Postgres  instance. Postgres is free, it’s open-source, extensible, and has best of breed geo-spatial features out of the box (cube/earthdistance and postgis). I choose it for those reasons, and for familiarity (which means productivity).</p>
+
+<p>We also have a single application server running a single Flask instance (Flask is lightweight and performant, perfect for a simple API like we have here). The hosting service isn’t too important, but we need to be able to fully manage our servers, so full access via AWS or Digital Ocean is preferred. Let’s assume we use Digital Ocean for simplicity.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+                          + --- +    + --- +
+                          | PG  | &lt;- | App |
+                          + --- +    + --- +
+
+</code></pre>
+</div>
+
+<p>The general path is to scale your application out and your database up until you need a different strategy. The question here is, what is the bottleneck going to be? The application or the database?</p>
+
+<p>It is hard to say without benchmarks, and system monitoring but I will assume we won’t need to do anything more than scale up the hardware on our database server. We will want to make sure to have enough memory so that we don’t have to hit the disk on query and at a minimum keep all indexes in cache. 1000 QPS likely isn’t an issue for PG. The situations spelled out in P2-P4 will be computing differences between lat/long and then doing lookups. I/O (time on the wire between the app server and the db) is almost certaintly going to be the bottleneck.</p>
+
+<p>How can we decrease latency? The first low-hanging fruit is too make sure our app server is in the same datacenter as our DB server to reduce that round trip. We may want to do some simple indexing the on most frequently looked up columns (lat/long), this won’t decrease that latency but we can optimize lookup. Beyond that, if we need to reduce latency further we can implement a caching scheme.</p>
+
+<p>We could use a cache-aside or cache-through scheme because, as caching theory supposes, the most likely lookups are the lookups that have been already made. For popular metropolitan areas this is probably true, so there is likely a performance gain to be had with some kind of caching scheme for computed values. Regardless, we will still have to perform a significant amount of fresh computation. Let’s assume 50% of the time we have a cache-miss and need to query the database.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+                    + --- +    + ----- +    + --- +
+                    | PG  | &lt;- | Cache | &lt;- | App |
+                    + --- +    + ----- +    + --- +
+
+</code></pre>
+</div>
+
+<p>Let’s assume, that it is still too slow, and our application instance is waiting on I/O. What can we do? First, we optimize hardware by scaling up application instances, then we scale out to multiple servers. Once, we have multiple servers we could implement some kind of reverse proxy load balancing scheme. With Digital Ocean and AWS we can get this as a built in feature with some setup cost or we could implement it from ‘scratch’ with Nginx.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>                                  + --- +
+                               &lt;- | App |
+                                  + --- +
+          + --- +    + ----- +    + --- +    + --------- +
+          | PG  | &lt;- | Cache | &lt;- | App | &lt;- | Load Bal. |
+          + --- +    + ----- +    + --- +    + --------- +
+
+</code></pre>
+</div>
+
+<p>I believe this is all that is necessary at this QPS, but there also strategies to scale out the DB, if necessary, as the user base grows. I’ll also mention, that if we are concerned about handling QPS we should throttle greedy/malicious IPs so if it does happen that we approach our capacity we won’t degrade performance for all users due to a single greedy user.</p>
+
+<h1 id="the-approach">The Approach</h1>
+
+<p>There is an acronym that I follow when I think through these types of problems.</p>
+
+<p><strong>U</strong>se Case - what is the <em>specific</em> feature that needs to be implemented. In this case, the feature is simple and the QPS is given to us. But if it wasn’t, we would estimate the QPS by identifying a feature, then estimating QPS and the ratio between reads and writes.</p>
+
+<p><strong>S</strong>ervices - what computationally needs to happen and how you should split the system between the use cases.</p>
+
+<p><strong>P</strong>ersistence - SQL vs. NoSQL? How is your data structured? What kind of write/read QPS requirements do you have? Services and persistence are the meat of your system. Similar to how a data structure + an algorithm = a program so too does computation + storage = a system.</p>
+
+<p><strong>S</strong>caling - Scaling up your hardware to run concurrent processes? Scaling out your servers by spinning up more boxes in parrallel? At the database level you can put all data in memory and shard if you need to.</p>
+
+<p>You might try this process out on a question like: “how would you build Facebook/Twitter.” Test out your mental model!</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Get Michael Onboard</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Get Michael Onboard
+            
+            </li>
+            
+            <li><a href="mailto:michaelrmentele@gmail.com">michaelrmentele@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/michaelrmentele"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">michaelrmentele</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is the technical site and blog of software engineer Michael Mentele.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
