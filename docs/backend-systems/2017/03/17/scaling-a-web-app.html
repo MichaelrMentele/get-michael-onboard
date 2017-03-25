@@ -105,9 +105,9 @@
 
 <p>The general path is to scale your application out and your database up until you need a different strategy. The question here is, what is the bottleneck going to be? The application or the database?</p>
 
-<p>It is hard to say without benchmarks, and system monitoring but I will assume we won’t need to do anything more than scale up the hardware on our database server. We will want to make sure to have enough memory so that we don’t have to hit the disk on query and at a minimum keep all indexes in cache. 1000 QPS likely isn’t an issue for PG. The situations spelled out in P2-P4 will be computing differences between lat/long and then doing lookups. I/O (time on the wire between the app server and the db) is almost certaintly going to be the bottleneck.</p>
+<p>It is hard to say without benchmarks, and system monitoring but I will assume we won’t need to do anything more than scale up the hardware on our database server. We will want to make sure to have enough memory so that we don’t have to hit the disk on query and at a minimum keep all indexes in cache. 1000 QPS likely isn’t an issue for PG. Computing differences between lat/long and doing lookups many lookups means that I/O (time on the wire between the app server and the db) is almost certainly going to be the bottleneck.</p>
 
-<p>How can we decrease latency? The first low-hanging fruit is too make sure our app server is in the same datacenter as our DB server to reduce that round trip. We may want to do some simple indexing the on most frequently looked up columns (lat/long), this won’t decrease that latency but we can optimize lookup. Beyond that, if we need to reduce latency further we can implement a caching scheme.</p>
+<p>How can we decrease latency? The first low-hanging fruit is too make sure our app server is in the same datacenter as our DB server to reduce that round trip time. We may want to do some simple indexing on the most frequently looked up columns (lat/long), this won’t decrease that latency but we can optimize lookup. Beyond that, if we need to reduce latency further we can implement a caching scheme.</p>
 
 <p>We could use a cache-aside or cache-through scheme because, as caching theory supposes, the most likely lookups are the lookups that have been already made. For popular metropolitan areas this is probably true, so there is likely a performance gain to be had with some kind of caching scheme for computed values. Regardless, we will still have to perform a significant amount of fresh computation. Let’s assume 50% of the time we have a cache-miss and need to query the database.</p>
 
@@ -143,7 +143,7 @@
 
 <p><strong>P</strong>ersistence - SQL vs. NoSQL? How is your data structured? What kind of write/read QPS requirements do you have? Services and persistence are the meat of your system. Similar to how a data structure + an algorithm = a program so too does computation + storage = a system.</p>
 
-<p><strong>S</strong>caling - Scaling up your hardware to run concurrent processes? Scaling out your servers by spinning up more boxes in parrallel? At the database level you can put all data in memory and shard if you need to.</p>
+<p><strong>S</strong>caling - Scaling up your hardware to run concurrent processes? Scaling out your servers by spinning up more boxes in parallel? At the database level you can put all data in memory and shard if you need to.</p>
 
 <p>You might try this process out on a question like: “how would you build Facebook/Twitter.” Test out your mental model!</p>
 
