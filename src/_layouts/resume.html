@@ -218,3 +218,6 @@ layout: default
 
 
 </div><!--// doc -->
+{% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+{% endif %}
